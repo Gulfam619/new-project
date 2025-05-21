@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donovaly - Mountain Village</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+      crossorigin="anonymous"
+    />
+
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="location.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="sticky-top">
+      <!-- TopBar -->
+      <div class="top-bar">
+        <div class="container text-center text-white py-1">
+          <div class="d-flex gap-4 justify-content-center">
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="16"
+                width="16"
+                class="mb-1"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"
+                  fill="white"
+                />
+              </svg>
+              +421 914 345 313
+            </div>
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="16"
+                width="16"
+                class="mb-1"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"
+                  fill="white"
+                />
+              </svg>
+              donovaly@mwd.sk
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Navbar -->
+      <div class="header-bar border-top">
+        <div
+          class="container d-flex justify-content-between align-items-center py-3"
+          id="mainHeader"
+        >
+          <div class="d-flex align-items-center">
+            <a href="index.html">
+              <img
+                src="images/modena-logo.svg"
+                alt="Modena Apartments"
+                class="logo-img me-2"
+                id="logo"
+              />
+            </a>
+          </div>
+
+          <nav class="main-nav d-none d-lg-flex">
+            <a href="index.html" class="nav-link active">ABOUT THE PROJECT</a>
+            <a href="location.html" class="nav-link">LOCATION</a>
+            <a href="service.html" class="nav-link">SERVICES</a>
+            <a href="#" class="nav-link">FINANCING</a>
+            <a href="#" class="nav-link">OFFER</a>
+            <a href="#" class="nav-link">GALLERY</a>
+            <a href="contact.html" class="nav-link">CONTACT</a>
+            <button class="btn btn-cta">
+              <a href="#">I AM INTERESTED</a>
+            </button>
+          </nav>
+          <div class="mobile-menu d-flex align-items-center gap-4 d-lg-none">
+            <span class="offer-text">Offer</span>
+            <div
+              id="menuToggle"
+              style="cursor: pointer; transition: transform 0.3s ease"
+            >
+              <svg
+                class="hamburger-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                height="20"
+                width="20"
+                viewBox="0 0 448 512"
+              >
+                <path
+                  d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"
+                  fill="#a38219"
+                />
+              </svg>
+              <svg
+                class="close-icon d-none"
+                xmlns="http://www.w3.org/2000/svg"
+                height="20"
+                width="20"
+                viewBox="0 0 384 512"
+              >
+                <path
+                  d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+                  fill="#a38219"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="mobileMenuOverlay" class="mobile-overlay d-lg-none d-none">
+        <div class="mobile-nav d-flex flex-column align-items-end py-4">
+          <a href="index.html" class="nav-link p-2">ABOUT THE PROJECT</a>
+          <a href="location.html" class="nav-link p-2">LOCATION</a>
+          <a href="service.html" class="nav-link p-2">SERVICES</a>
+          <a href="#" class="nav-link p-2">FINANCING</a>
+          <a href="#" class="nav-link p-2">OFFER</a>
+          <a href="#" class="nav-link p-2">GALLERY</a>
+          <a href="contact.html" class="nav-link p-2">CONTACT</a>
+        </div>
+        <div class="footer-contact">
+          <h3 class="footer-name mb-0">Jakub Martisek</h3>
+          <p class="footer-contact-title">
+            <strong>Contact the seller</strong>
+          </p>
+          <p class="footer-phone">+421 914 345 313</p>
+          <p class="footer-email">donovaly@mwd.sk</p>
+        </div>
+      </div>
+    </div>
+    <!-- Parent Div -->
+    <div class="parentDiv">
+      <!-- First Component (Hero) -->
+      <div class="container-fluid p-0">
+        <div class="container">
+          <div class="row g-0 position-relative">
+            <!-- Left Side: Map (will stay fixed) -->
+            <div class="col-md-6">
+              <div class="map-container">
+                <img
+                  src="./images/LocationImages/map.webp"
+                  alt="Map of Donovaly"
+                  class="map-image"
+                />
+              </div>
+            </div>
+
+            <!-- Right Side: Text Content -->
+            <div class="col-md-6">
+              <div class="text-content">
+                <h1 class="mb-4 mt-3 mt-md-0">
+                  <span class="heading-bold"
+                    >A PLACE
+                    <span class="heading-light"> WHERE EVERY BREATH</span></span
+                  >
+                  <span class="heading-bold separator"> GIVES STRENGTH</span>
+                </h1>
+
+                <p class="mb-4 map-Para">
+                  <strong>Donovaly</strong> is located in
+                  <strong>the Low Tatras National Park NAPANT</strong> at an
+                  altitude of<strong> 960 m above sea level</strong>, on the
+                  border of the <strong>Veľká Fatra </strong> and
+                  <strong>Starohorské vrchy mountains,</strong> between
+                  Ružomberok (27 km away) and Banská Bystrica (25 km away).
+                  Although Donovaly has only 248 permanent residents, occasional
+                  tourists and regular visitors love this mountain village. No
+                  wonder, because it is surrounded by nature on all sides. Here
+                  you will find postcard-beautiful scenery and air that fills
+                  you with peace and vitality with every breath.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row g-0 bottom">
+          <div class="col-12 position-relative">
+            <div class="mountain-container">
+              <img
+                src="./images/LocationImages/Mountains.webp"
+                alt="Donovaly Mountains"
+                class="mountain-image img-fluid"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Winter Supports -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6" style="padding-right: 30px">
+            <h1 class="winter-heading">
+              <span class="winter-title separator">WINTER SPORTS</span> PARADISE
+            </h1>
+            <p class="highlight-text mt-4">
+              <strong style="color: #a38219 !important">17 slopes</strong> and
+              more than
+              <strong style="color: #a38219 !important">
+                11 km of regularly maintained ski trails?</strong
+              >
+            </p>
+            <p class="descriptive-text mb-4 mb-md-0">
+              That sounds like heavenly music to a skier's ears! Downhill
+              skiers, cross-country skiers, snowboarders... everyone will find
+              something to their liking.
+              <br />
+              Where to ski in the area:
+            </p>
+            <div class="location-list mb-4 mb-md-0">
+              <div class="location-item">
+                <span class="location-title">Malino Brdô </span> –
+                <span class="location-distance">30km</span>
+              </div>
+              <div class="location-item">
+                <span class="location-title">Krahule</span> –
+                <span class="location-distance">59 km</span>
+              </div>
+              <div class="location-item">
+                <span class="location-title">Kubínska hoľa</span> –
+                <span class="location-distance">59 km</span>
+              </div>
+              <div class="location-item">
+                <span class="location-title">Veľká Lučivná</span> –
+                <span class="location-distance">59 km</span>
+              </div>
+              <div class="location-item">
+                <span class="location-title">Jasná</span> –
+                <span class="location-distance">60 km</span>
+              </div>
+              <div class="location-item">
+                <span class="location-title">Mýto pod Ďumbierom</span> –
+                <span class="location-distance">66 km</span>
+              </div>
+              <div class="location-item">
+                <span class="location-title">Valčianska dolina</span> –
+                <span class="location-distance">68 km</span>
+              </div>
+              <div class="location-item">
+                <span class="location-title">Jasenská dolina</span> –
+                <span class="location-distance">70 km</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="winter-images">
+              <div class="winter-image-top">
+                <img
+                  src="./images//LocationImages/Winter0.webp"
+                  alt="Cross-country skier with blue jacket in snow"
+                  class="img-fluid"
+                  style="height: 300px; width: 80%; object-fit: cover"
+                />
+              </div>
+              <div class="winter-image-bottom">
+                <img
+                  src="https://www.modenaapartments.sk/wp-content/uploads/2022/11/lyziarka.webp"
+                  alt="Snowboarder with yellow jacket in mountains"
+                  class="img-fluid"
+                  style="height: 400px; width: 100%; object-fit: cover"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Images No 2 Section -->
+      <div class="container">
+        <div class="row flex-column-reverse flex-md-row">
+          <div class="col-md-6">
+            <div class="tracking-images">
+              <div class="tracking-image-top">
+                <img
+                  src="https://www.modenaapartments.sk/wp-content/uploads/2022/11/cyklistika.webp"
+                  alt="Cross-country skier with blue jacket in snow"
+                  class="img-fluid"
+                  style="height: 350px; width: 80%; object-fit: cover"
+                />
+              </div>
+              <div class="tracking-image-bottom">
+                <img
+                  src="https://www.modenaapartments.sk/wp-content/uploads/2022/11/turistka.webp"
+                  alt="Snowboarder with yellow jacket in mountains"
+                  class="img-fluid"
+                  style="height: 350px; width: 87%; object-fit: cover"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 moutain-text" style="padding-left: 30px">
+            <h1 class="text-blue">
+              BACKPACK ON YOUR <br />
+              <span class="text-bold gold-underline" style="color: #002838"
+                >BACK</span
+              >
+              <br />
+              AND
+              <span class="text-bold"
+                >GO TO THE <br />MOU<span
+                  class="gold-underline"
+                  style="color: #002838"
+                  >NTAINS</span
+                ></span
+              >
+            </h1>
+            <p class="highlight-tracking-text">
+              Even though you will find all the comforts of home in your
+              apartment, the beautiful Tatra nature will not allow you to stay
+              inside for long. There are up to 14 cycling routes and more than
+              10 hiking trails in the area. Did you come lightly? No problem.
+              You can rent electric scooters, bicycles and electric bicycles
+              directly in the village. Adrenaline enthusiasts can try
+              paragliding, a rope park, a mountain bobsleigh track, mountain
+              climbing or aerial activities. Nearby Hrabovo, Krpáčovo and Turček
+              are renowned fishing locations.
+            </p>
+
+            <div class="last-container">
+              <div class="activity-item">
+                <div class="icon">
+                  <img
+                    src="https://www.modenaapartments.sk/wp-content/uploads/2022/11/cyklotrasy.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="number">14</div>
+                <div class="description">cycle routes</div>
+              </div>
+
+              <div class="activity-item">
+                <div class="icon">
+                  <img
+                    src="https://www.modenaapartments.sk/wp-content/uploads/2022/11/turisticke-chodniky.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="number">10 hiking</div>
+                <div class="description">trails</div>
+              </div>
+
+              <div class="activity-item">
+                <div class="icon">
+                  <img
+                    src="https://www.modenaapartments.sk/wp-content/uploads/2022/11/adrenalinove-sporty.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="number">adrenaline</div>
+                <div class="description">sports</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Images No 3 Section   -->
+      <div class="container mt-0 mt-md-5">
+        <div class="row mt-0 mt-md-5">
+          <div class="col-md-6" style="padding-right: 30px">
+            <h1 class="winter-title separator">WELLNESS</h1>
+            <h2 class="paradise-title">
+              AND <span class="winter-title separator"> WATER FUN</span>
+            </h2>
+
+            <p class="descriptive-text mt-5 px-2">
+              Tired after a hike? Right in Donovaly you will find a wide range
+              of wellness services, a sauna world and relaxation zones, an ideal
+              place to relax for the whole family. And how about trying out
+              other water parks, swimming pools or water reservoirs in the
+              vicinity?
+              <br />
+              Here are our tips:
+            </p>
+
+            <div class="location-list">
+              <div class="location-item">
+                <span class="location-title">Gothal Liptovská osada </span
+                ><span class="location-distance"> – 14km</span>
+              </div>
+              <div class="location-item">
+                <span class="location-title"
+                  >Štiavničky beach swimming pool</span
+                ><span class="location-distance"> – 27 km</span>
+              </div>
+              <div class="location-item">
+                <span class="location-title">Hrabovo water reservoir</span
+                ><span class="location-distance"> – 39 km</span>
+              </div>
+              <div class="location-item">
+                <span class="location-title">Veľká Lučivná</span
+                ><span class="location-distance"> – 37 km</span>
+              </div>
+              <div class="location-item">
+                <span class="location-title">Sliač thermal swimming pool</span
+                ><span class="location-distance"> – 41 km</span>
+              </div>
+              <div class="location-item">
+                <span class="location-title">Liptovská Mara </span
+                ><span class="location-distance"> – 43 km</span>
+              </div>
+              <div class="location-item">
+                <span class="location-title">Tatralandia water world</span
+                ><span class="location-distance"> – 53 km</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mt-5 mt-md-0">
+            <div class="wellness-images">
+              <div class="wellness-image-top">
+                <img
+                  src="https://www.modenaapartments.sk/wp-content/uploads/2022/11/wellness.webp"
+                  alt="Cross-country skier with blue jacket in snow"
+                  class="img-fluid"
+                  style="height: 310px; width: 75%; object-fit: cover"
+                />
+              </div>
+              <div class="wellness-image-bottom">
+                <img
+                  src="https://www.modenaapartments.sk/wp-content/uploads/2022/11/vodna-zabava.webp"
+                  alt="Snowboarder with yellow jacket in mountains"
+                  class="img-fluid"
+                  style="height: 280px; width: 90%; object-fit: cover"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Images No 4 Section   -->
+      <div class="container">
+        <div class="row flex-column-reverse flex-md-row">
+          <div class="col-md-6">
+            <div class="party-images">
+              <div class="party-image-top">
+                <img
+                  src="https://www.modenaapartments.sk/wp-content/uploads/2022/11/beh.webp"
+                  alt="Cross-country skier with blue jacket in snow"
+                  class="img-fluid"
+                  style="height: 260px; width: 70%; object-fit: cover"
+                />
+              </div>
+              <div class="party-image-bottom">
+                <img
+                  src="https://www.modenaapartments.sk/wp-content/uploads/2022/11/party.webp"
+                  alt="Snowboarder with yellow jacket in mountains"
+                  class="img-fluid"
+                  style="height: 390px; width: 70%; object-fit: cover"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 px-4" style="padding-right: 30px">
+            <h1 class="winter-title separator">TATRA PARTY,</h1>
+            <!-- <div class="gold-line"></div> -->
+            <h2 class="paradise-title">as it should be</h2>
+
+            <p class="descriptive-text my-5 px-2 text-start">
+              Donovaly is alive! Dog sledding, Donovaly night run, Donovaly
+              Fest, Donovaly Mascot Festival, Carnival show and many other
+              famous events will take care of your social program all year
+              round. If you are more attracted to individual exploration than
+              organized entertainment, in Donovaly you will not know where to go
+              first.
+              <br />
+              Here are a few recommendations for fans of adventure trips:
+            </p>
+            <div class="location-list">
+              <div class="location-item">
+                <span class="location-title"
+                  >Mining Astronomical Clock – Špania dolina </span
+                ><span class="location-distance"> – 11 km</span>
+              </div>
+              <div class="location-item">
+                <span class="location-title">Mining Trail – Staré Hory </span
+                ><span class="location-distance"> – 27 km</span>
+              </div>
+              <div class="location-item">
+                <span class="location-title">Basilica Minor – Staré Hory</span
+                ><span class="location-distance"> – 39 km</span>
+              </div>
+              <div class="location-item">
+                <span class="location-title"
+                  >Bronze statue of the dog Dino </span
+                ><span class="location-distance"> – 37 km</span>
+              </div>
+              <div class="location-item">
+                <span class="location-title">Donovaly Chapels</span
+                ><span class="location-distance"> – 41 km</span>
+              </div>
+              <div class="location-item">
+                <span class="location-title">Harmanecká Cave</span
+                ><span class="location-distance"> – 43 km</span>
+              </div>
+              <div class="location-item">
+                <span class="location-title">Slovenská Ľupča Castle</span
+                ><span class="location-distance"> – 53 km</span>
+              </div>
+              <div class="location-item">
+                <span class="location-title">Vlkolín Open-Air Museum</span
+                ><span class="location-distance"> – 53 km</span>
+              </div>
+              <div class="location-item">
+                <span class="location-title">Birthplace of Ján Donovaly</span
+                ><span class="location-distance"> – 53 km</span>
+              </div>
+            </div>
+
+            <button class="see-menu-button mb-4">SEE THE MENU</button>
+          </div>
+        </div>
+      </div>
+      <!-- Images No 5 Section   -->
+      <div class="container my-5">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="content-section">
+              <h1 class="headline">CHILDREN FORGET</h1>
+              <h2 class="subheadline">WHAT BORING IS</h2>
+              <p class="description">
+                Little ones can be extremely demanding when it comes to
+                entertainment, so it's good that during your stay at
+                <span class="highlight">MODENA</span>
+                <span class="brand">APARTMENTS</span
+                ><span style="color: #002838; font-weight: normal">
+                  Donovaly
+                </span>
+                you can offer them a whole range of action-packed activities.
+                Family attractions such as
+                <strong>
+                  Donovalkovo, Habakuky, FUN Arena, Myšiačik's Children's Park
+                  or Bobsleigh
+                </strong>
+                will "excite" even the most restless little ones. Donovalkovo
+                regularly organizes children's themed events such as
+                <strong>
+                  Frozen Day, Disney Day, Night in Donovalkovo, Race Day or
+                  Carnival Day</strong
+                >. Children will experience everything here, but not boredom.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="image-section">
+              <img
+                src="https://www.modenaapartments.sk/wp-content/uploads/2022/11/deti.webp"
+                alt="Children playing in a ball pit with slides"
+                class="playground-image"
+              />
+              <div class="diagonal-line"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Footer -->
+    </div>
+  <div id="galleryModal" class="modal-overlay d-none">
+  <div class="modal-content">
+    <button id="closeModal" class="close-btn">&times;</button>
+    <div class="gallery-row">
+            <div class="gallery-label">Gallery</div>
+            <a href="gallary.html" class="gallery-link" data-index="0">CONSTRUCTION</a>
+        </div>
+        
+        <div class="gallery-row">
+            <div class="gallery-label">Gallery</div>
+            <a href="gallary.html" class="gallery-link" data-index="1">LARGE APARTMENT</a>
+            <span class="size-indicator">| L |</span>
+        </div>
+        
+        <div class="gallery-row">
+            <div class="gallery-label">Gallery</div>
+            <a href="gallary.html" class="gallery-link" data-index="2">MEDIUM APARTMENT</a>
+            <span class="size-indicator">| M |</span>
+        </div>
+        
+        <div class="gallery-row">
+            <div class="gallery-label">Gallery</div>
+            <a href="gallary.html" class="gallery-link" data-index="3">SMALL APARTMENT</a>
+            <span class="size-indicator">| S |</span>
+        </div>
+        
+        <div class="gallery-row">
+            <div class="gallery-label">Gallery</div>
+            <a href="gallary.html" class="gallery-link" data-index="4">CHILDREN'S CORNER</a>
+        </div>
+        
+        <div class="gallery-row">
+            <div class="gallery-label">Gallery</div>
+            <a href="gallary.html" class="gallery-link" data-index="5">LOBBY</a>
+        </div>
+        
+        <div class="gallery-row">
+            <div class="gallery-label">Gallery</div>
+            <a href="gallary.html" class="gallery-link" data-index="6">RESTAURANT</a>
+        </div>
+        
+        <div class="gallery-row">
+            <a href="gallary.html" class="standalone-label" data-index="7">SPA</a>
+            <div class="gallery-label">Gallery</div>
+        </div>
+        
+        <div class="gallery-row">
+            <div class="gallery-label">Gallery</div>
+            <a href="gallary.html" class="gallery-link" data-index="8">WELLNESS</a>
+        </div>
+        
+        <div class="gallery-row">
+            <a href="video.html" class="standalone-label" data-index="9">VIDEO</a>
+            <div class="index.html">Gallery</div>
+        </div>
+    <!-- You can add your gallery images or carousel here -->
+  </div>
+</div>
+    <!-- Footer -->
+    <footer class="modena-footer">
+      <div class="container">
+        <div class="row py-4">
+          <div class="col-md-3">
+            <div class="footer-logo">
+              <img src="images/modena-footer-logo.png" alt="" />
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="footer-contact">
+              <h3 class="footer-name">Jakub Martisek</h3>
+              <p class="footer-contact-title">
+                <strong>Contact the seller</strong>
+              </p>
+              <p class="footer-phone">+421 914 345 313</p>
+              <p class="footer-email">donovaly@mwd.sk</p>
+            </div>
+          </div>
+         <div class="col-md-3">
+            <div class="footer-links">
+              <div class="links-column">
+                <a href="index.html" class="footer-link">About the project</a>
+                <a href="location.html" class="footer-link">Location</a>
+                <a href="service.html" class="footer-link">Services</a>
+                <a href="#" class="footer-link">Offer</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="footer-links">
+              <div class="links-column">
+                <a href="gallary.html" class="footer-link">Gallery</a>
+                <a href="contact.html" class="footer-link">Contacts</a>
+                <a href="#" class="footer-link">Personal data protection</a>
+                <a href="#" class="footer-link">Cookie settings</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-border"></div>
+        <div class="footer-copyright">
+          <div class="footer-copyright-text">
+            <p>
+              © 2025 <strong class="main-site-name">MODENA</strong>
+              <strong class="site-name">APARTMENTS DONOVALY</strong>
+            </p>
+          </div>
+          <div class="social-icons">
+            <a href="#" class="icon-bg">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="20"
+                width="20"
+                viewBox="0 0 448 512"
+              >
+                <path
+                  d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                  fill="white"
+                />
+              </svg>
+            </a>
+            <a href="#" class="icon-bg">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="20"
+                width="20"
+                viewBox="0 0 320 512"
+              >
+                <path
+                  d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"
+                  fill="white"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Scroll-Up-Button -->
+    <button
+      id="scrollToTopBtn"
+      type="button"
+      class="btn scroll-up-btn position-fixed bottom-0 end-0 bg-transparent border-0"
+      aria-label="Scroll to top"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        height="25"
+        width="25"
+        class="scroll-icon"
+        viewBox="0 0 512 512"
+      >
+        <path d="M256 144L96 304l17 17 143-143 143 143 17-17L256 144z" />
+      </svg>
+    </button>
+    <!-- Bootstrap JS and Popper.js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="script.js"></script>
+    <!-- Custom JavaScript -->
+    <script>
+      // Intersection Observer to detect when element is in viewport
+
+      // First Image Animation
+      document.addEventListener("DOMContentLoaded", function () {
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                // Add the visible class when entering viewport
+                entry.target.classList.add("visible");
+              } else {
+                // Remove the visible class when leaving viewport
+                entry.target.classList.remove("visible");
+              }
+            });
+          },
+          { threshold: 0.2 }
+        );
+
+        // Target the image section
+        const imageSection = document.querySelector(".winter-image-bottom");
+        observer.observe(imageSection);
+      });
+
+      // Second Image Animation
+      document.addEventListener("DOMContentLoaded", function () {
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                // Add the visible class when entering viewport
+                entry.target.classList.add("visible");
+              } else {
+                // Remove the visible class when leaving viewport
+                entry.target.classList.remove("visible");
+              }
+            });
+          },
+          { threshold: 0.2 }
+        );
+
+        // Target the image section
+        const imageSection = document.querySelector(".tracking-image-bottom");
+        observer.observe(imageSection);
+      });
+
+      // Third Image Animation
+      document.addEventListener("DOMContentLoaded", function () {
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                // Add the visible class when entering viewport
+                entry.target.classList.add("visible");
+              } else {
+                // Remove the visible class when leaving viewport
+                entry.target.classList.remove("visible");
+              }
+            });
+          },
+          { threshold: 0.2 }
+        );
+
+        // Target the image section
+        const imageSection = document.querySelector(".wellness-image-bottom");
+        observer.observe(imageSection);
+      });
+
+      // Fourth Image Animation
+      document.addEventListener("DOMContentLoaded", function () {
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                // Add the visible class when entering viewport
+                entry.target.classList.add("visible");
+              } else {
+                // Remove the visible class when leaving viewport
+                entry.target.classList.remove("visible");
+              }
+            });
+          },
+          { threshold: 0.2 }
+        );
+
+        // Target the image section
+        const imageSection = document.querySelector(".party-image-bottom");
+        observer.observe(imageSection);
+      });
+      // Fifth Image Animation
+      document.addEventListener("DOMContentLoaded", function () {
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                // Add the visible class when entering viewport
+                entry.target.classList.add("visible");
+              } else {
+                // Remove the visible class when leaving viewport
+                entry.target.classList.remove("visible");
+              }
+            });
+          },
+          { threshold: 0.2 }
+        );
+
+        // Target the image section
+        const imageSection = document.querySelector(".image-section");
+        observer.observe(imageSection);
+      });
+    </script>
+  </body>
+</html>

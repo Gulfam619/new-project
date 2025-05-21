@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="sticky-top" >
+      <!-- TopBar -->
+      <div class="top-bar">
+        <div class="container text-center text-white py-1">
+          <div class="d-flex gap-4 justify-content-center">
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="16"
+                width="16"
+                class="mb-1"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"
+                  fill="white"
+                />
+              </svg>
+              +421 914 345 313
+            </div>
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="16"
+                width="16"
+                class="mb-1"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"
+                  fill="white"
+                />
+              </svg>
+              donovaly@mwd.sk
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Navbar -->
+      <div class="header-bar border-top">
+        <div
+          class="container d-flex justify-content-between align-items-center py-3"  id="mainHeader">
+          <div class="d-flex align-items-center">
+            <a href="index.html">
+              <img
+  src="images/modena-logo.svg"
+  alt="Modena Apartments"
+  class="logo-img me-2"
+  id="logo"
+/>
+
+              
+            </a>
+          </div>
+
+          <nav class="main-nav d-none d-lg-flex">
+            <a href="index.html" class="nav-link active">ABOUT THE PROJECT</a>
+            <a href="location.html" class="nav-link">LOCATION</a>
+            <a href="service.html" class="nav-link">SERVICES</a>
+            <a href="#" class="nav-link">FINANCING</a>
+            <a href="#" class="nav-link">OFFER</a>
+            <a href="#" class="nav-link">GALLERY</a>
+            <a href="contact.html" class="nav-link">CONTACT</a>
+            <button class="btn btn-cta">
+              <a href="#">I AM INTERESTED</a>
+            </button>
+          </nav>
+          <div class="mobile-menu d-flex align-items-center gap-4 d-lg-none">
+            <span class="offer-text">Offer</span>
+            <div
+              id="menuToggle"
+              style="cursor: pointer; transition: transform 0.3s ease"
+            >
+              <svg
+                class="hamburger-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                height="20"
+                width="20"
+                viewBox="0 0 448 512"
+              >
+                <path
+                  d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"
+                  fill="#a38219"
+                />
+              </svg>
+              <svg
+                class="close-icon d-none"
+                xmlns="http://www.w3.org/2000/svg"
+                height="20"
+                width="20"
+                viewBox="0 0 384 512"
+              >
+                <path
+                  d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+                  fill="#a38219"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="mobileMenuOverlay" class="mobile-overlay d-lg-none d-none">
+        <div class="mobile-nav d-flex flex-column align-items-end py-4">
+          <a href="index.html" class="nav-link p-2">ABOUT THE PROJECT</a>
+          <a href="location.html" class="nav-link p-2">LOCATION</a>
+          <a href="service.html" class="nav-link p-2">SERVICES</a>
+          <a href="#" class="nav-link p-2">FINANCING</a>
+          <a href="#" class="nav-link p-2">OFFER</a>
+          <a href="#" class="nav-link p-2">GALLERY</a>
+          <a href="contact.html" class="nav-link p-2">CONTACT</a>
+        </div>
+        <div class="footer-contact">
+          <h3 class="footer-name mb-0">Jakub Martisek</h3>
+          <p class="footer-contact-title">
+            <strong>Contact the seller</strong>
+          </p>
+          <p class="footer-phone">+421 914 345 313</p>
+          <p class="footer-email">donovaly@mwd.sk</p>
+        </div>
+      </div>
+    </div>
+    <!-- Hero Section -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 px-4 px-md-0">
+            <h3 class="hero-text">
+              Carefree investment <br />
+              to the property
+            </h3>
+            <div class="main-heading">
+              <h1>
+                <span class="text-bold">
+                  <span class="gold-underline">MODENA</span> APARTMENTS</span
+                >
+                <br />
+                Donovaly for sale
+              </h1>
+            </div>
+            <p class="hero-decs pe-0 pe-md-2">
+              <strong>Advantageous investment</strong> and investment apartments
+              in a great location. A modern apartment hotel in the heart of the
+              charming Low Tatras offers 100 apartments in the main building
+              <strong>starting at €90,000 .</strong>
+            </p>
+            <div class="btn-wrapper">
+              <a href="" class="btn gold-btn"> SEE THE MENU </a>
+            </div>
+          </div>
+          <div class="col-md-6 p-0 p-md-1">
+            <div class="mt-5 mt-md-0">
+              <img src="images/hero-image.jpg" class="hero-image" alt="" />
+              <img src="images/badge.png" class="badge-image" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Content Section -->
+    <section class="content-section mt-md-5 mt-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5">
+            <h1 class="mb-4 mb-md-5 d-block d-md-none px-4 px-md-0">
+              <span class="gold-underline">MODENA</span> <br />
+              <span class="text-bold">APARTMENTS</span> <br />
+              Donovaly
+            </h1>
+            <div class="row text-center mb-4">
+              <div class="col-md-6 col-6 mb-4">
+                <img src="images/apartmany-icon.svg" alt="" />
+                <h6 class="icon-text">
+                  100 <br />
+                  apartments
+                </h6>
+              </div>
+              <div class="col-md-6 col-6 mb-4">
+                <img src="images/challet-icon.svg" alt="" />
+                <h6 class="icon-text">property<br />management</h6>
+              </div>
+              <div class="col-md-6 col-6 mb-4">
+                <img src="images/priroda-icon.svg" alt="" />
+                <h6 class="icon-text">beautiful<br />nature</h6>
+              </div>
+              <div class="col-md-6 col-6 mb-4">
+                <img src="images/dostupnost-icon.svg" alt="" />
+                <h5 class="icon-text">great<br />availability</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-7">
+            <div class="row">
+              <div class="col-md-12 px-4 px-md-0">
+                <h3 class="mb-5 d-none d-md-block">
+                  <span class="gold-underline">MODENA</span>
+                  <span class="text-bold">APARTMENTS</span>
+                  Donovaly
+                </h3>
+                <p class="hero-decs">
+                  <strong>A modern apartment hotel</strong> in the heart of the
+                  charming Low Tatras offers 100 apartments in the main
+                  building. All of this on the border of nature and the city,
+                  just a step away from undisturbed walks in the forest and from
+                  enjoying local attractions and social life.
+                </p>
+                <p class="hero-decs mt-4">
+                  The apartment hotel is located
+                  <strong
+                    >in a peaceful and quiet part of Pod Magurou with excellent
+                    accessibility to the center of Donovaly</strong
+                  >. The comfort of residents and visitors will be enhanced by
+                  an extended package of services for a truly carefree stay.
+                  <strong>The apartment house</strong> offers ideal real estate
+                  for investment in this location.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Video & Text Section -->
+    <section class="my-5">
+      <div class="container py-4">
+        <div class="row">
+          <div class="col-md-7">
+            <div>
+              <video
+                src="images/Video.mp4"
+                class="video"
+                muted
+                autoplay
+                loop
+              ></video>
+            </div>
+          </div>
+          <div class="col-md-5 px-4 ps-md-5">
+            <h2 class="hero-text">
+              Designed by <span class="text-bold">nature</span> , <br />
+              improved by <span class="text-bold">technologies</span>
+            </h2>
+            <h1 class="text-blue">
+              Investment <br />
+              apartments <br />
+              <span class="text-bold">MODENA Donovaly</span>
+            </h1>
+            <p class="hero-decs mt-2 mt-md-4">
+              More peace and comfort, less rush and worry. Enjoy impressive
+              views, fresh mountain air and endless possibilities for active
+              leisure.
+              <span class="text-bold">Modena hotel apartments for sale</span>
+              are a place where nature is at home and you are at home in nature.
+            </p>
+            <div class="btn-wrapper mt-4">
+              <a href="" class="btn gold-btn"> I AM INTERESTED. </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Investing -->
+    <section class="my-0 investing-detail">
+      <div class="container">
+        <div class="row px-4 px-md-0">
+          <div class="mb-4">
+            <h1 class="invest-heading">
+              <span class="gold-underline">Investing</span>
+              <span class="text-bold">in real estate</span>
+            </h1>
+            <h1 class="invest-heading">is always a good choice</h1>
+          </div>
+          <div class="d-md-none d-block">
+            <h1 class="text-gold text-bold text-bold">6.82% per annum</h1>
+            <p class="text-white">
+              Average growth in real estate prices on the Slovak market over the
+              last 10 years based on statistical data from the NBS.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <div class="image-section">
+              <img src="images/graf.png" class="graf-image" alt="" />
+            </div>
+          </div>
+          <div class="col-md-6 ps-0 ps-md-5">
+            <div class="d-none d-md-block">
+              <h1 class="text-gold text-bold">6.82% per annum</h1>
+              <p class="text-white">
+                Average growth in real estate prices on the Slovak market over
+                the last 10 years based on statistical data from the NBS.
+              </p>
+            </div>
+            <p class="invest-desc mt-4 mt-md-0">
+              Owning an apartment in the Slovak mountains is an increasingly
+              attractive real estate destination, but the supply is far from
+              enough to meet the growing demand. So don't wait, fulfill your
+              dream of a picturesque "home away from home" and buy
+              <span class="text-bold"
+                >investment apartments in Modena from €90,000 with a monthly
+                payment from €440</span
+              >
+              . You will get a place that will allow you to escape the hustle
+              and bustle of the city and at the same time a source of stable
+              passive income.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Opportunity -->
+    <section class="my-5">
+      <div class="container">
+        <div class="row py-0 py-md-4 px-4 px-md-0">
+          <div class="col-md-6">
+            <div>
+              <p class="hero-decs">
+                We take care of the operation and management of the property, so
+                you don't have to worry about anything. All you have to do is
+                enjoy the benefits of the project, such as
+                <span class="text-bold"
+                  >a wide range of services and favorable investment
+                  appreciation</span
+                >
+                . You will gain money and space to relax in one of the most
+                desirable mountain locations.
+              </p>
+              <p class="hero-decs">
+                The future owner has the option to put his property into the
+                extraction system, while receiving
+                <span class="text-bold"
+                  >a regular share of the extracted amount</span
+                >
+                of his property. Of course, he can
+                <span class="text-bold"
+                  >use his property for up to 3 weeks a year</span
+                >
+                .
+              </p>
+              <p class="hero-decs">
+                <span class="text-bold"
+                  >We will take care of the overall condition of the
+                  property,</span
+                >
+                including the interior furnishings . You just put your feet up
+                and relax.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="btn-wrapper d-md-none d-flex mb-3 mb-md-0">
+              <a href="" class="btn gold-btn"> SEE THE MENU </a>
+            </div>
+            <div>
+              <h3 class="text-gold great-text">Great investment opportunity</h3>
+              <h2 class="gold-underline text-bold" style="color: #002838">
+                Expected return 11.5%
+              </h2>
+              <p class="hero-decs mt-md-4">
+                <span class="text-bold">Investing in real estate</span> has
+                never been more profitable and easier! Modena apartments
+                Donovaly for sale will provide you with
+                <span class="text-bold">a stable passive income</span>
+                and relieve you of the burden of management worries. Whether you
+                choose our
+                <span class="text-bold">guaranteed yield of 5%</span> and the
+                growth of real estate prices will bring you
+                <span class="text-bold">another 6.5% per year</span> or you
+                choose our second program with
+                <span class="text-bold">an expected yield of 11.5%</span> , your
+                invested funds will always appreciate nicely.
+              </p>
+              <div class="btn-wrapper d-none d-md-block">
+                <a href="" class="btn gold-btn"> SEE THE MENU </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Real Estate Section -->
+    <section class="my-5">
+      <div class="container py-5">
+        <div class="row px-4 px-md-0">
+          <div class="col-md-5">
+            <div class="pe-4">
+              <h2 class="real-state-text">
+                Real estate investment <br />
+                <span class="text-bold gold-underline" style="color: #002838"
+                  >will pay off!</span
+                >
+              </h2>
+              <p class="hero-decs mt-0 mt-md-4">
+                Apartments for sale Modena Apartments Donovaly expect
+                <span class="text-bold"
+                  >an average annual project yield of 11.5% per year</span
+                >
+                . The condition is that the apartment owner uses one of the
+                Garancia or Výnosnosť 65/35 yield programs.
+              </p>
+              <p class="hero-decs">
+                <span class="text-bold">The Guarantee</span> program guarantees
+                you an annual return of 5% of the acquisition value of the
+                property excluding VAT. On the other hand, the
+                <span class="text-bold">Profitability</span> program provides an
+                estimated annual return of 6 to 10% of the acquisition value of
+                the property excluding VAT.
+              </p>
+              <div class="btn-wrapper mt-4">
+                <a href="" class="btn gold-btn">CONTACT US</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-7">
+            <div class="image-section">
+              <img src="images/donovaly.webp" class="state-image" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Carousel Section -->
+    <section class="carousel-section">
+      <div class="text-center mb-5">
+        <h1 class="gold-underline mb-5 text-bold" style="color: #002838">
+          Gallery
+        </h1>
+      </div>
+      <div class="owl-slider px-3 px-md-0">
+        <div id="carousel" class="owl-carousel">
+          <div class="item">
+            <img src="images/Slide1.webp" alt="1000X1000" />
+          </div>
+          <div class="item">
+            <img src="images/Slide2.webp" alt="" />
+          </div>
+          <div class="item">
+            <img src="images/Slide3.png" alt="" />
+          </div>
+          <div class="item">
+            <img src="images/Slide4.jpg" alt="" />
+          </div>
+          <div class="item">
+            <img src="images/Slide5.jpg" alt="" />
+          </div>
+          <div class="item">
+            <img src="images/Slide6.jpg" alt="" />
+          </div>
+          <div class="item">
+            <img src="images/Slide7.jpg" alt="" />
+          </div>
+          <div class="item">
+            <img src="images/Slide8.jpg" alt="" />
+          </div>
+          <div class="item">
+            <img src="images/Slide9.jpg" alt="" />
+          </div>
+          <div class="item">
+            <img src="images/Slide10.jpg" alt="" />
+          </div>
+          <div class="item">
+            <img src="images/Slide11.jpg" alt="" />
+          </div>
+          <div class="item">
+            <img src="images/Slide12.jpg" alt="" />
+          </div>
+          <div class="item">
+            <img src="images/Slide13.webp" alt="" />
+          </div>
+          <div class="item">
+            <img src="images/Slide-14.webp" alt="" />
+          </div>
+          <div class="item">
+            <img src="images/Slide15.webp" alt="" />
+          </div>
+          <div class="item">
+            <img src="images/Slide16.webp" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="btn-wrapper mt-5 d-flex justify-content-center">
+        <a href="" class="btn gold-btn">FULL GALLERY</a>
+      </div>
+    </section>
+    <!-- APARTMENTS team -->
+    <section class="my-5">
+      <div class="container py-5 py-md-0">
+        <div class="row px-4">
+          <div class="col-md-5">
+            <div class="me-2">
+              <h4 class="text-gold mb-4 text-gold">Abalex sro</h4>
+              <h1 class="text-blue">Meet our</h1>
+              <h1 class="text-bold text-blue">
+                <span class="gold-underline">MODENA</span> APARTMENTS team
+              </h1>
+            </div>
+          </div>
+          <div class="col-md-7">
+            <p class="hero-decs">
+              Modena investment apartments Donovaly
+              <span class="text-bold">is managed by Abalex sro, a company</span>
+              established specifically for this project. In 2020, after
+              successful negotiations, ownership rights to the building and
+              surrounding land of the former Donovaly hotel were acquired.
+              Abalex sro will reconstruct, furnish and operate the building as
+              an apartment hotel – Modena Apartments Donovaly.
+            </p>
+            <p class="hero-decs mt-3">
+              Thanks to
+              <span class="text-bold"
+                >its own interior design studio Modena Wood Design</span
+              >
+              and superior services, Abalex sro will ensure that investment
+              apartments for sale are designed down to the last detail. Future
+              residents and visitors will enjoy premium comfort and high-quality
+              design inspired by nature.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="modena-footer">
+      <div class="container">
+        <div class="row py-4">
+          <div class="col-md-3">
+            <div class="footer-logo">
+              <img src="images/modena-footer-logo.png" alt="" />
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="footer-contact">
+              <h3 class="footer-name">Jakub Martisek</h3>
+              <p class="footer-contact-title">
+                <strong>Contact the seller</strong>
+              </p>
+              <p class="footer-phone">+421 914 345 313</p>
+              <p class="footer-email">donovaly@mwd.sk</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="footer-links">
+              <div class="links-column">
+                <a href="index.html" class="footer-link">About the project</a>
+                <a href="location.html" class="footer-link">Location</a>
+                <a href="service.html" class="footer-link">Services</a>
+                <a href="#" class="footer-link">Offer</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="footer-links">
+              <div class="links-column">
+                <a href="gallary.html" class="footer-link">Gallery</a>
+                <a href="contact.html" class="footer-link">Contacts</a>
+                <a href="#" class="footer-link">Personal data protection</a>
+                <a href="#" class="footer-link">Cookie settings</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-border"></div>
+        <div class="footer-copyright">
+          <div class="footer-copyright-text">
+            <p>
+              © 2025 <strong class="main-site-name">MODENA</strong>
+              <strong class="site-name">APARTMENTS DONOVALY</strong>
+            </p>
+          </div>
+          <div class="social-icons">
+            <a href="#" class="icon-bg">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="20"
+                width="20"
+                viewBox="0 0 448 512"
+              >
+                <path
+                  d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                  fill="white"
+                />
+              </svg>
+            </a>
+            <a href="#" class="icon-bg">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="20"
+                width="20"
+                viewBox="0 0 320 512"
+              >
+                <path
+                  d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"
+                  fill="white"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+     <div id="galleryModal" class="modal-overlay d-none">
+  <div class="modal-content">
+    <button id="closeModal" class="close-btn">&times;</button>
+    <div class="gallery-row">
+            <div class="gallery-label">Gallery</div>
+            <a href="gallary.html" class="gallery-link" data-index="0">CONSTRUCTION</a>
+        </div>
+        
+        <div class="gallery-row">
+            <div class="gallery-label">Gallery</div>
+            <a href="gallary.html" class="gallery-link" data-index="1">LARGE APARTMENT</a>
+            <span class="size-indicator">| L |</span>
+        </div>
+        
+        <div class="gallery-row">
+            <div class="gallery-label">Gallery</div>
+            <a href="gallary.html" class="gallery-link" data-index="2">MEDIUM APARTMENT</a>
+            <span class="size-indicator">| M |</span>
+        </div>
+        
+        <div class="gallery-row">
+            <div class="gallery-label">Gallery</div>
+            <a href="gallary.html" class="gallery-link" data-index="3">SMALL APARTMENT</a>
+            <span class="size-indicator">| S |</span>
+        </div>
+        
+        <div class="gallery-row">
+            <div class="gallery-label">Gallery</div>
+            <a href="gallary.html" class="gallery-link" data-index="4">CHILDREN'S CORNER</a>
+        </div>
+        
+        <div class="gallery-row">
+            <div class="gallery-label">Gallery</div>
+            <a href="gallary.html" class="gallery-link" data-index="5">LOBBY</a>
+        </div>
+        
+        <div class="gallery-row">
+            <div class="gallery-label">Gallery</div>
+            <a href="gallary.html" class="gallery-link" data-index="6">RESTAURANT</a>
+        </div>
+        
+        <div class="gallery-row">
+            <a href="gallary.html" class="standalone-label" data-index="7">SPA</a>
+            <div class="gallery-label">Gallery</div>
+        </div>
+        
+        <div class="gallery-row">
+            <div class="gallery-label">Gallery</div>
+            <a href="gallary.html" class="gallery-link" data-index="8">WELLNESS</a>
+        </div>
+        
+        <div class="gallery-row">
+            <a href="video.html" class="standalone-label" data-index="9">VIDEO</a>
+            <div class="index.html">Gallery</div>
+        </div>
+    <!-- You can add your gallery images or carousel here -->
+  </div>
+</div>
+    <!-- Scroll-Up-Button -->
+    <button
+      id="scrollToTopBtn"
+      type="button"
+      class="btn scroll-up-btn position-fixed bottom-0 end-0 bg-transparent border-0"
+      aria-label="Scroll to top"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        height="25"
+        width="25"
+        class="scroll-icon"
+        viewBox="0 0 512 512"
+      >
+        <path d="M256 144L96 304l17 17 143-143 143 143 17-17L256 144z" />
+      </svg>
+    </button>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

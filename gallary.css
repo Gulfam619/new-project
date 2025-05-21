@@ -1,0 +1,395 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+    background-color: white;
+  /* font-family: "Poppins", Helvetica, Lucida, sans-serif; */
+  font-family: "Poppins" !important;
+}
+        /* Name of Gallary CSS */
+
+        .bgImg{
+              padding-top: 20px; 
+             font-family: Arial, sans-serif;
+    /* background-color: #f5f5f5 !important; */
+    background-image: url("https://www.modenaapartments.sk/wp-content/uploads/2022/10/repeat-bg.webp");
+
+    margin: 0;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    width: 100%;
+        }
+
+    #gallary-name
+    {
+        font-size: 48px;
+        color: #002838;
+        font-weight: bold;
+        font-family: "Poppins";
+        height: fit-content;
+        border-bottom: 2px solid #a38219;
+      
+    }
+        
+    .modemaImg {
+    max-width: 80%;
+    margin-top: 30px;
+    height: auto;
+}
+
+        .outer-container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1px;
+           
+        }
+        
+        .logo {
+            text-align: center;
+            margin: 20px 0;
+        }
+        
+        .divider {
+            display: flex;
+            align-items: center;
+            margin: 30px 0;
+        }
+        
+        .divider-line {
+            flex: 1;
+            height: 1px;
+            background-color: #a38219;
+        }
+        
+       
+       
+        .title {
+           
+            font-size: 46px;
+            color: #002838;
+            display: inline-block;
+            height: auto;
+            font-weight: 100;
+        }
+        
+        .gallery {
+            color: #1a3b43;
+            border-bottom: 2px solid #a38219;
+        }
+
+        /* Carousel Section Styles */
+        .carousel-sectionGallery {
+            width: 100%;
+            padding: 0px 0;
+          
+        }
+
+        .gold-underline {
+            position: relative;
+            color: #002838;
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+
+        .gold-underline:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 2px;
+            background-color: #a38219;
+        }
+
+        .text-bold {
+            font-weight: 700;
+        }
+
+        .owl-sliderGallery {
+            position: relative;
+            max-width: 1140px;
+            margin: 0 auto;
+        }
+
+        .owl-nav button {
+            max-width: 1200px;
+            display: flex;
+            height: 20px ;
+            justify-content: space-between;
+            position: absolute;
+            top: 50%;
+            background-color: transparent !important;
+            color: #a38219 !important;
+            margin: 0;
+            transition: all 0.3s ease-in-out;
+        }
+
+        /* .owl-nav button.owl-prev {
+            left: -50px;
+        }
+
+        .owl-nav button.owl-next {
+            right: -50px;
+        } */
+
+        .owl-dots {
+            text-align: center;
+            padding-top: 25px;
+        }
+
+        .owl-dots button.owl-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            display: inline-block;
+            border: 1px solid #666;
+            margin: 0 3px;
+            background: transparent;
+        }
+
+        .owl-dots button.owl-dot.active {
+            background-color: #a38219;
+            border-color: #a38219;
+        }
+
+        .owl-dots button.owl-dot:focus {
+            outline: none;
+        }
+
+        .owl-carouselGallery .owl-nav button.owl-prev span,
+        .owl-carouselGallery .owl-nav button.owl-next span {
+            font-size: 36px;
+            line-height: 0;
+            position: relative;
+            top: -4px;
+            color: #a38219;
+        }
+
+        .owl-carouselGallery .owl-nav button.owl-prev:hover span,
+        .owl-carouselGallery .owl-nav button.owl-next:hover span {
+            color: #002838;
+        }
+
+        .owl-nav button:focus {
+            outline: none;
+        }
+
+        .item {
+            height: 300px;
+            overflow: hidden;
+            /* border-radius: 5px; */
+            /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+            margin: 0 10px;
+        }
+
+        .item img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .item:hover img {
+            transform: scale(1.05);
+        }
+
+        .gold-btn {
+            background-color: #a38219;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 5px;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-block;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .gold-btn:hover {
+            background-color: #876c14;
+        }
+
+        /* Tabs Styles */
+        .tabs {
+            display: flex;
+            justify-content: center;
+            margin: 30px 0;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        
+        .tab {
+            padding: 10px 20px;
+            background-color: #f0f0f0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .tab:hover {
+            background-color: #e0e0e0;
+        }
+        
+        .tab.active {
+            background-color: #a38219;
+            color: white;
+            border-color: #a38219;
+        }
+
+        @media (max-width: 992px) {
+            .owl-nav button.owl-prev {
+                left: -20px;
+            }
+            
+            .owl-nav button.owl-next {
+                right: -20px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .tabs {
+                gap: 10px;
+            }
+            
+            .tab {
+                padding: 8px 15px;
+                font-size: 14px;
+            }
+            
+           
+            
+            .item {
+                height: 250px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .tabs {
+                flex-wrap: wrap;
+            }
+            
+            .gold-btn {
+                padding: 10px 20px;
+            }
+            
+          
+            
+            .item {
+                height: 200px;
+            }
+        }
+
+
+
+
+    
+.mySwiper
+{
+    padding-top: 50px !important;
+    height: 300px;
+    width: 80%;
+}
+.swiper-slide .item {
+  height: 170px;
+  /* border-radius: 5px; */
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.swiper-slide .item img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+
+
+
+.mySwiper {
+  max-width: 1000px; /* very important */
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute;
+  top: 0%;
+  transform: translateY(800%);
+  z-index: 10;
+  width: 40px;
+  height: 40px;
+  background-color: #00000050;
+  border-radius: 50%;
+  color: white;
+}
+
+.swiper-button-prev {
+  left: -10px; /* push outside */
+}
+
+.swiper-button-next {
+  right: -10px; /* push outside */
+}
+
+.swiper-pagination-bullet { 
+   width: 10px !important;
+  height: 10px !important;
+  background-color: white !important;  /* Inactive bullets = white */
+  opacity: 1; 
+  border: 1px solid grey;            /* Optional for slightly transparent look */
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #a38219 !important;  /* Active bullet = black */
+  opacity: 1;
+}
+
+
+
+/* Medium-large screens */
+@media (max-width: 480px) {
+   #gallary-name, #galleryTitle
+   {
+    font-size: 20px;
+   }
+   .bgImg
+   {
+    height: 70px;
+   }
+}
+
+
+
+/* Initial Header State */
+#mainHeader {
+  transition: all 0.3s ease;
+  padding: 20px 0;
+}
+
+/* Shrinked Header */
+.header-shrink {
+  padding: 10px 0 !important;
+}
+
+/* Initial Logo */
+#logo {
+  transition: all 0.3s ease;
+  height: 60px;
+}
+
+/* Shrinked Logo */
+.logo-shrink {
+  height: 50px !important;
+}

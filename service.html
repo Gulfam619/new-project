@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Service Page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="service.css" />
+  </head>
+  <body>
+    <div class="sticky-top">
+      <!-- TopBar -->
+      <div class="top-bar">
+        <div class="container text-center text-white py-1">
+          <div class="d-flex gap-4 justify-content-center">
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="16"
+                width="16"
+                class="mb-1"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"
+                  fill="white"
+                />
+              </svg>
+              +421 914 345 313
+            </div>
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="16"
+                width="16"
+                class="mb-1"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"
+                  fill="white"
+                />
+              </svg>
+              donovaly@mwd.sk
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Navbar -->
+      <div class="header-bar border-top">
+        <div
+          class="container d-flex justify-content-between align-items-center py-3"
+          id="mainHeader"
+        >
+          <div class="d-flex align-items-center">
+            <a href="index.html">
+              <img
+                src="images/modena-logo.svg"
+                alt="Modena Apartments"
+                class="logo-img me-2"
+                id="logo"
+              />
+            </a>
+          </div>
+
+          <nav class="main-nav d-none d-lg-flex">
+            <a href="index.html" class="nav-link active">ABOUT THE PROJECT</a>
+            <a href="location.html" class="nav-link">LOCATION</a>
+            <a href="service.html" class="nav-link">SERVICES</a>
+            <a href="#" class="nav-link">FINANCING</a>
+            <a href="#" class="nav-link">OFFER</a>
+            <a href="#" class="nav-link">GALLERY</a>
+            <a href="contact.html" class="nav-link">CONTACT</a>
+            <button class="btn btn-cta">
+              <a href="#">I AM INTERESTED</a>
+            </button>
+          </nav>
+          <div class="mobile-menu d-flex align-items-center gap-4 d-lg-none">
+            <span class="offer-text">Offer</span>
+            <div
+              id="menuToggle"
+              style="cursor: pointer; transition: transform 0.3s ease"
+            >
+              <svg
+                class="hamburger-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                height="20"
+                width="20"
+                viewBox="0 0 448 512"
+              >
+                <path
+                  d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"
+                  fill="#a38219"
+                />
+              </svg>
+              <svg
+                class="close-icon d-none"
+                xmlns="http://www.w3.org/2000/svg"
+                height="20"
+                width="20"
+                viewBox="0 0 384 512"
+              >
+                <path
+                  d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+                  fill="#a38219"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="mobileMenuOverlay" class="mobile-overlay d-lg-none d-none">
+        <div class="mobile-nav d-flex flex-column align-items-end py-4">
+          <a href="index.html" class="nav-link p-2">ABOUT THE PROJECT</a>
+          <a href="location.html" class="nav-link p-2">LOCATION</a>
+          <a href="service.html" class="nav-link p-2">SERVICES</a>
+          <a href="#" class="nav-link p-2">FINANCING</a>
+          <a href="#" class="nav-link p-2">OFFER</a>
+          <a href="#" class="nav-link p-2">GALLERY</a>
+          <a href="contact.html" class="nav-link p-2">CONTACT</a>
+        </div>
+        <div class="footer-contact">
+          <h3 class="footer-name mb-0">Jakub Martisek</h3>
+          <p class="footer-contact-title">
+            <strong>Contact the seller</strong>
+          </p>
+          <p class="footer-phone">+421 914 345 313</p>
+          <p class="footer-email">donovaly@mwd.sk</p>
+        </div>
+      </div>
+    </div>
+    <div class="parentDiv">
+      <!-- Service Section -->
+      <section class="mb-3 mt-5 service-wrapper">
+        <h1 class="service-heading text-blue web">
+          Services apartments Modena
+        </h1>
+        <h1 class="text-blue mob">
+          Services apartments
+          <span class="gold-underline" style="color: #002838">Modena</span>
+        </h1>
+        <p class="service-para">
+          The coziness of home, the amenities of a holiday resort, modern design
+          and elegance. Hotel apartments for sale Modena Donovaly combine
+          luxurious
+          <span class="text-bold">comfort with comprehensive services</span>
+          so that you will not miss anything during your stay in the mountain
+          apartments.
+        </p>
+      </section>
+
+      <!-- Provided Services -->
+      <section class="container mt-0 mt-md-5">
+        <div class="row mt-0 mt-md-5">
+          <div class="col-md-6 p-0 p-md-4">
+            <!-- 24/7 Reception -->
+            <div class="amenity">
+              <div class="icon">
+                <img
+                  src="https://www.modenaapartments.sk/wp-content/uploads/2022/11/recepcia.svg"
+                  alt=""
+                />
+              </div>
+              <div class="content">
+                <h2>24/7 reception</h2>
+                <p>
+                  The 24-hour reception will ensure continuous comfort for you
+                  and your guests.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 p-0 p-md-4">
+            <!-- Children's Corners -->
+            <div class="amenity">
+              <div class="icon">
+                <img
+                  src="https://www.modenaapartments.sk/wp-content/uploads/2022/11/detske-kutiky.svg"
+                  alt=""
+                />
+              </div>
+              <div class="content">
+                <h2>Children's corners</h2>
+                <p>
+                  More space for children to play means less worries for you.
+                  You can find children's corners in the restaurant and in the
+                  lobby.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 p-0 p-md-4">
+            <!-- Lobby Bar & Cafe -->
+            <div class="amenity">
+              <div class="icon">
+                <img
+                  src="https://www.modenaapartments.sk/wp-content/uploads/2022/11/lobby-bar.svg"
+                  alt=""
+                />
+              </div>
+              <div class="content">
+                <h2>Lobby bar & cafe</h2>
+                <p>
+                  Why not go to a café in slippers? Relax with a fragrant coffee
+                  or a light drink, inside or on the terrace.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 p-0 p-md-4">
+            <!-- Congress Room -->
+            <div class="amenity">
+              <div class="icon">
+                <img
+                  src="https://www.modenaapartments.sk/wp-content/uploads/2022/11/kongresova-miestnost.svg"
+                  alt=""
+                />
+              </div>
+              <div class="content">
+                <h2>Congress room</h2>
+                <p>
+                  A work conference? A family celebration? A wedding? If you
+                  want to host them on a high level, you don't have to go far to
+                  find a representative space.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 p-0 p-md-4">
+            <!-- Rum & Whiskey Bar -->
+            <div class="amenity">
+              <div class="icon">
+                <img
+                  src="https://www.modenaapartments.sk/wp-content/uploads/2022/11/rum-whisky-bar.svg"
+                  alt=""
+                />
+              </div>
+              <div class="content">
+                <h2>Rum & whiskey bar</h2>
+                <p>
+                  Something for the indulgent. In addition to a wide range of
+                  quality spirits, you can also look forward to experiential
+                  tastings.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 p-0 p-md-4">
+            <!-- Smart Technologies -->
+            <div class="amenity">
+              <div class="icon">
+                <img
+                  src="https://www.modenaapartments.sk/wp-content/uploads/2022/11/smart-technologie.svg"
+                  alt=""
+                />
+              </div>
+              <div class="content">
+                <h2>Smart technologies</h2>
+                <p>
+                  Sophisticated technological solutions such as smart locks,
+                  smart heating settings, smart reservation systems, and voice
+                  assistance save time, energy, and money.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 p-0 p-md-4">
+            <!-- Massages -->
+            <div class="amenity">
+              <div class="icon">
+                <img
+                  src="https://www.modenaapartments.sk/wp-content/uploads/2022/11/masaze.svg"
+                  alt=""
+                />
+              </div>
+              <div class="content">
+                <h2>Massages</h2>
+                <p>
+                  Various types of massages under the supervision of experienced
+                  masseurs and physiotherapists will help get your body in its
+                  best shape.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 p-0 p-md-4">
+            <!-- Wellness & Spa -->
+            <div class="amenity">
+              <div class="icon">
+                <img
+                  src="https://www.modenaapartments.sk/wp-content/uploads/2022/11/wellness.svg"
+                  alt=""
+                />
+              </div>
+              <div class="content">
+                <h2>Wellness & spa</h2>
+                <p>
+                  Wellness treatments will invigorate both body and soul. Wash
+                  away stress in the jacuzzi, regenerate in the Finnish or steam
+                  sauna, and finally relax in the relaxation room.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 p-0 p-md-4">
+            <!-- Parking -->
+            <div class="amenity">
+              <div class="icon">
+                <img
+                  src="https://www.modenaapartments.sk/wp-content/uploads/2022/11/parkovanie.svg"
+                  alt=""
+                />
+              </div>
+              <div class="content">
+                <h2>Parking</h2>
+                <p>
+                  We offer free parking for guests. Parking spaces are available
+                  for purchase with the apartment.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 p-0 p-md-4">
+            <!-- Shuttle service -->
+            <div class="amenity">
+              <div class="icon">
+                <img
+                  src="https://www.modenaapartments.sk/wp-content/uploads/2022/11/kyvadlova-doprava.svg"
+                  alt=""
+                />
+              </div>
+              <div class="content">
+                <h2>Shuttle service</h2>
+                <p>
+                  We invite guests to use the transportation to the basic
+                  attractions of Donovaly and the village center, as well as to
+                  the ski slope.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 p-0 p-md-4">
+            <!-- Restaurant -->
+            <div class="amenity">
+              <div class="icon">
+                <img
+                  src="https://www.modenaapartments.sk/wp-content/uploads/2022/11/restauracia.svg"
+                  alt=""
+                />
+              </div>
+              <div class="content">
+                <h2>Restaurant</h2>
+                <p>
+                  Leave the cooking to us, just enjoy the gastronomic
+                  experience. Excellent cuisine, two-story premises and a
+                  children's corner for the little ones.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 p-0 p-md-4">
+            <!-- Bicycle rental -->
+            <div class="amenity">
+              <div class="icon">
+                <img
+                  src="https://www.modenaapartments.sk/wp-content/uploads/2022/11/cyklopozicovna.svg"
+                  alt=""
+                />
+              </div>
+              <div class="content">
+                <h2>Bicycle rental</h2>
+                <p>
+                  Thanks to the option to rent a bicycle or electric bike,
+                  nothing prevents you from exploring local cycling routes, of
+                  which there are plenty in the area.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 p-0 p-md-4">
+            <!-- Yoga center -->
+            <div class="amenity">
+              <div class="icon">
+                <img
+                  src="https://www.modenaapartments.sk/wp-content/uploads/2022/11/joga-centrum.svg"
+                  alt=""
+                />
+              </div>
+              <div class="content">
+                <h2>Yoga center</h2>
+                <p>
+                  Combine a healing stay in nature with the benefits of yoga.
+                  The exercises are adapted to all levels - from beginners to
+                  advanced.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 p-0 p-md-4">
+            <!-- Attractions -->
+            <div class="amenity">
+              <div class="icon">
+                <img
+                  src="https://www.modenaapartments.sk/wp-content/uploads/2022/11/atrakcie.svg"
+                  alt=""
+                />
+              </div>
+              <div class="content">
+                <h2>Attractions</h2>
+                <p>
+                  Enjoy local attractions and social life in the area with your
+                  friends and family.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Modema Image -->
+      <div class="container">
+        <img
+          cl
+          src="https://www.modenaapartments.sk/wp-content/uploads/2022/10/divider-01.svg"
+          alt=""
+          class="modemaImg"
+        />
+      </div>
+
+      <!-- CareFree Operation -->
+      <div class="carefree-container mb-3">
+        <h1 class="carefree-heading">
+          <span>Carefree</span> <span>operation</span>
+        </h1>
+
+        <p class="carefree-description text-center">
+          Leave the worries about operation to us.
+          <span class="carefree-highlight-text">The MODENA</span>
+          <span class="carefree-strong-text">APARTMENTS</span>
+          <span class="carefree-Donovaly-text">Donovaly</span> project will be
+          operated and managed by our company, whose goal is to take care of the
+          project and the building so that the object retains its purpose and
+          does not deteriorate. In addition to the basic service associated with
+          the operation and technical security of the building, we will also
+          take care of a whole range of above-standard services.
+        </p>
+      </div>
+
+      <!-- CareFree Operation Option -->
+      <div class="optionouterDiv mb-5">
+        <h1 class="carefreeOption-heading mb-0 mb-md-5 pb-4 pb-md-5">
+          <span>Apartment</span> <span>operating options</span>
+        </h1>
+
+        <!-- Option Image Container -->
+        <!-- Img 1 -->
+        <div class="container">
+          <div class="row flex-column-reverse flex-md-row">
+            <div class="col-md-6 p-0 pe-md-4">
+              <div class="image-section mt-4 mt-md-0">
+                <img
+                  src="https://www.modenaapartments.sk/wp-content/uploads/2022/11/program-garancia.webp"
+                  alt="People arranging furniture in an apartment"
+                  style="height: 450px"
+                  class="image1"
+                />
+              </div>
+            </div>
+            <div class="col-md-6 p-0">
+              <div class="Imgcontent-section">
+                <div class="program-title">
+                  <h2>
+                    <span>Guarantee</span>
+                    <span style="font-size: 28px">Program</span>
+                  </h2>
+                </div>
+                <div class="program-description">
+                  <p>
+                    The apartment owner hands over his property to a management
+                    company, which takes care of its exploitation and operation,
+                    while
+                    <span class="highlight"
+                      >we guarantee the owner a paid income</span
+                    >
+                    of <span class="highlight"> 5%</span> of the acquisition
+                    value of the property excluding VAT for 2 years. The owner
+                    receives this income on an agreed date to his bank account.
+                    With this program, the owner does not pay a management fee,
+                    media and energy for 2 years and has a carefree investment.
+                    After the 24-month period, the owner, by mutual agreement,
+                    extends the lease agreement through
+                    <span class="highlight">the Guarantee program</span>
+                    in the form of an amendment to the lease agreement or
+                    automatically switches to
+                    <span class="highlight">
+                      the 65/35 Profitability Program. The apartment owner can
+                      use his apartment for his needs for 3 weeks a year.</span
+                    >
+                  </p>
+                </div>
+                <button class="conditions-button">CONDITIONS</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Img 2 -->
+        <div class="container mt-0 mt-md-5">
+          <div class="row mt-5">
+            <div class="col-md-6 p-0">
+              <div class="Imgcontent-section3">
+                <div class="program-title">
+                  <h2>
+                    <span>Profitability 65/35</span>
+                    <span style="font-size: 28px">Program</span>
+                  </h2>
+                </div>
+
+                <div class="program-description pr-2">
+                  <p>
+                    The apartment owner will hand over their property to a
+                    management company, which will take care of its exploitation
+                    and operation, while the owner will be<span
+                      class="highlight"
+                    >
+                      paid a yield depending on the actual utilization of the
+                      project in the ratio of 65/35.</span
+                    >
+                    65% of the yield value will be paid to the owner into a bank
+                    account at a specified frequency. The remaining 35% remains
+                    with the management company (from this amount it will pay
+                    for marketing activities, cleaning services, etc.). In this
+                    program, the apartment owner pays an advance payment for
+                    property management and electricity consumption. We estimate
+                    the annual yield between 6 and 10%.<span class="highlight"
+                      >The apartment owner can use his apartment 3 weeks a
+                      year.</span
+                    >
+                  </p>
+                </div>
+
+                <button class="conditions-button">CONDITIONS</button>
+              </div>
+            </div>
+            <div class="col-md-6 p-0">
+              <div class="image-section2 mt-4 mt-md-0">
+                <img
+                  src="https://www.modenaapartments.sk/wp-content/uploads/2022/11/program-vynosnost.webp"
+                  alt="People arranging furniture in an apartment"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Img 3 -->
+        <div class="container mt-3 mt-md-5">
+          <div class="row flex-column-reverse flex-md-row mt-3 mt-md-5">
+            <div class="col-md-6 p-0 pe-md-4">
+              <div class="image-section3 mt-4 mt-md-0">
+                <img
+                  src="https://www.modenaapartments.sk/wp-content/uploads/2022/11/program-individual-01.webp"
+                  alt="People arranging furniture in an apartment"
+                />
+              </div>
+            </div>
+            <div class="col-md-6 p-0">
+              <div class="Imgcontent-section">
+                <div class="program-title">
+                  <h2>
+                    <span>Individual</span>
+                    <span style="font-size: 28px">Program</span>
+                  </h2>
+                </div>
+
+                <div class="program-description">
+                  <p>
+                    The apartment owner can furnish his apartment according to
+                    his wishes, he can use the services of the apartment hotel.
+                    He
+                    <span class="highlight"
+                      >can use the apartment whenever he sees fit.</span
+                    >
+                    The apartment owner concludes a contract on joining the
+                    management of the building and makes regular advance
+                    payments for the apartment to the management company.
+                  </p>
+                </div>
+
+                <button class="conditions-button">CONDITIONS</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="parentFeature mt-3 mt-md-5 container-fluid">
+          <div class="container py-0 py-md-4 mt-5">
+            <div class="row py-0 py-md-5">
+              <div class="col-md-6 p-0 pe-md-4">
+                <div class="feature-section">
+                  <h2 class="section-title">
+                    SMART
+                    <span
+                      class="gold-underline text-bold"
+                      style="color: #002838"
+                      >APARTMENT</span
+                    >
+                  </h2>
+                  <ul class="feature-list">
+                    <li class="feature-item">
+                      <span class="check-icon">✓</span>
+                      Smart Electric Lock
+                    </li>
+                    <li class="feature-item">
+                      <span class="check-icon">✓</span>
+                      Artificial intelligence Google Nest Mini
+                    </li>
+                    <li class="feature-item">
+                      <span class="check-icon">✓</span>
+                      Smart temperature control
+                    </li>
+                    <li class="feature-item">
+                      <span class="check-icon">✓</span>
+                      Smart TV + Smart speaker
+                    </li>
+                    <li class="feature-item">
+                      <span class="check-icon">✓</span>
+                      Voice control of lighting
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-6 p-0 pe-md-4">
+                <div class="feature-section">
+                  <h2 class="section-title">
+                    SMART
+                    <span
+                      class="gold-underline text-bold"
+                      style="color: #002838"
+                      >BUILDING</span
+                    >
+                  </h2>
+                  <ul class="feature-list">
+                    <li class="feature-item">
+                      <span class="check-icon">✓</span>
+                      Online booking system
+                    </li>
+                    <li class="feature-item">
+                      <span class="check-icon">✓</span>
+                      Smart entry system
+                    </li>
+                    <li class="feature-item">
+                      <span class="check-icon">✓</span>
+                      Smart security system
+                    </li>
+                    <li class="feature-item">
+                      <span class="check-icon">✓</span>
+                      Graphical navigation system
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container my-5">
+        <div class="row mt-0 mt-md-5">
+          <div class="col-md-12">
+            <h2>Program Terms and Conditions</h2>
+            <h1 class="underline">
+              Guarantee <span style="font-weight: 100">and</span> Profitability
+            </h1>
+
+            <p>
+              The owner has 21 days of free owner stay during the calendar year
+              outside the season (the period throughout the calendar year except
+              for the following dates: from 01.06. to 30.09. inclusive, from
+              23.12. to 06.01. inclusive, the Easter period from Thursday to
+              Monday inclusive, the period of spring holidays declared in
+              Slovakia, the Czech Republic and Hungary, the period of state and
+              church holidays declared in Slovakia, the Czech Republic and
+              Hungary).
+            </p>
+
+            <p>
+              The condition for including an investment apartment in
+              <span class="highlight">the Guarantee Program</span> and
+              <span class="highlight">the 65/35 Profitability Program</span> is
+              the purchase of standard apartment equipment. We will be happy to
+              provide you with information on the price for such standard
+              equipment upon request.
+            </p>
+
+            <button class="btn gold-btn">SEE THE MENU</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer class="modena-footer">
+      <div class="container">
+        <div class="row py-4">
+          <div class="col-md-3">
+            <div class="footer-logo">
+              <img src="images/modena-footer-logo.png" alt="" />
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="footer-contact">
+              <h3 class="footer-name">Jakub Martisek</h3>
+              <p class="footer-contact-title">
+                <strong>Contact the seller</strong>
+              </p>
+              <p class="footer-phone">+421 914 345 313</p>
+              <p class="footer-email">donovaly@mwd.sk</p>
+            </div>
+          </div>
+         <div class="col-md-3">
+            <div class="footer-links">
+              <div class="links-column">
+                <a href="index.html" class="footer-link">About the project</a>
+                <a href="location.html" class="footer-link">Location</a>
+                <a href="service.html" class="footer-link">Services</a>
+                <a href="#" class="footer-link">Offer</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="footer-links">
+              <div class="links-column">
+                <a href="gallary.html" class="footer-link">Gallery</a>
+                <a href="contact.html" class="footer-link">Contacts</a>
+                <a href="#" class="footer-link">Personal data protection</a>
+                <a href="#" class="footer-link">Cookie settings</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-border"></div>
+        <div class="footer-copyright">
+          <div class="footer-copyright-text">
+            <p>
+              © 2025 <strong class="main-site-name">MODENA</strong>
+              <strong class="site-name">APARTMENTS DONOVALY</strong>
+            </p>
+          </div>
+          <div class="social-icons">
+            <a href="#" class="icon-bg">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="20"
+                width="20"
+                viewBox="0 0 448 512"
+              >
+                <path
+                  d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                  fill="white"
+                />
+              </svg>
+            </a>
+            <a href="#" class="icon-bg">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="20"
+                width="20"
+                viewBox="0 0 320 512"
+              >
+                <path
+                  d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"
+                  fill="white"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+      <div id="galleryModal" class="modal-overlay d-none">
+  <div class="modal-content">
+    <button id="closeModal" class="close-btn">&times;</button>
+    <div class="gallery-row">
+            <div class="gallery-label">Gallery</div>
+            <a href="gallary.html" class="gallery-link" data-index="0">CONSTRUCTION</a>
+        </div>
+        
+        <div class="gallery-row">
+            <div class="gallery-label">Gallery</div>
+            <a href="gallary.html" class="gallery-link" data-index="1">LARGE APARTMENT</a>
+            <span class="size-indicator">| L |</span>
+        </div>
+        
+        <div class="gallery-row">
+            <div class="gallery-label">Gallery</div>
+            <a href="gallary.html" class="gallery-link" data-index="2">MEDIUM APARTMENT</a>
+            <span class="size-indicator">| M |</span>
+        </div>
+        
+        <div class="gallery-row">
+            <div class="gallery-label">Gallery</div>
+            <a href="gallary.html" class="gallery-link" data-index="3">SMALL APARTMENT</a>
+            <span class="size-indicator">| S |</span>
+        </div>
+        
+        <div class="gallery-row">
+            <div class="gallery-label">Gallery</div>
+            <a href="gallary.html" class="gallery-link" data-index="4">CHILDREN'S CORNER</a>
+        </div>
+        
+        <div class="gallery-row">
+            <div class="gallery-label">Gallery</div>
+            <a href="gallary.html" class="gallery-link" data-index="5">LOBBY</a>
+        </div>
+        
+        <div class="gallery-row">
+            <div class="gallery-label">Gallery</div>
+            <a href="gallary.html" class="gallery-link" data-index="6">RESTAURANT</a>
+        </div>
+        
+        <div class="gallery-row">
+            <a href="gallary.html" class="standalone-label" data-index="7">SPA</a>
+            <div class="gallery-label">Gallery</div>
+        </div>
+        
+        <div class="gallery-row">
+            <div class="gallery-label">Gallery</div>
+            <a href="gallary.html" class="gallery-link" data-index="8">WELLNESS</a>
+        </div>
+        
+        <div class="gallery-row">
+            <a href="video.html" class="standalone-label" data-index="9">VIDEO</a>
+            <div class="index.html">Gallery</div>
+        </div>
+    <!-- You can add your gallery images or carousel here -->
+  </div>
+</div>
+    <!-- Scroll-Up-Button -->
+    <button
+      id="scrollToTopBtn"
+      type="button"
+      class="btn scroll-up-btn position-fixed bottom-0 end-0 bg-transparent border-0"
+      aria-label="Scroll to top"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        height="25"
+        width="25"
+        class="scroll-icon"
+        viewBox="0 0 512 512"
+      >
+        <path d="M256 144L96 304l17 17 143-143 143 143 17-17L256 144z" />
+      </svg>
+    </button>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+      // First Image Animation
+      document.addEventListener("DOMContentLoaded", function () {
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                // Add the visible class when entering viewport
+                entry.target.classList.add("visible");
+              } else {
+                // Remove the visible class when leaving viewport
+                entry.target.classList.remove("visible");
+              }
+            });
+          },
+          { threshold: 0.2 }
+        );
+
+        // Target the image section
+        const imageSection = document.querySelector(".image-section");
+        observer.observe(imageSection);
+      });
+      // 2nd Image Animation
+      document.addEventListener("DOMContentLoaded", function () {
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                // Add the visible class when entering viewport
+                entry.target.classList.add("visible");
+              } else {
+                // Remove the visible class when leaving viewport
+                entry.target.classList.remove("visible");
+              }
+            });
+          },
+          { threshold: 0.2 }
+        );
+
+        // Target the image section
+        const imageSection = document.querySelector(".image-section2");
+        observer.observe(imageSection);
+      });
+      // 3rd Image Animation
+      document.addEventListener("DOMContentLoaded", function () {
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                // Add the visible class when entering viewport
+                entry.target.classList.add("visible");
+              } else {
+                // Remove the visible class when leaving viewport
+                entry.target.classList.remove("visible");
+              }
+            });
+          },
+          { threshold: 0.2 }
+        );
+
+        // Target the image section
+        const imageSection = document.querySelector(".image-section3");
+        observer.observe(imageSection);
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Gallery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="gallary.css">
+
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="sticky-top">
+        <!-- TopBar -->
+        <div class="top-bar">
+            <div class="container text-center text-white py-1">
+                <div class="d-flex gap-4 justify-content-center">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" class="mb-1"
+                            viewBox="0 0 512 512">
+                            <path
+                                d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"
+                                fill="white" />
+                        </svg>
+                        +421 914 345 313
+                    </div>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" class="mb-1"
+                            viewBox="0 0 512 512">
+                            <path
+                                d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"
+                                fill="white" />
+                        </svg>
+                        donovaly@mwd.sk
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar -->
+         <div class="header-bar border-top">
+        <div
+          class="container d-flex justify-content-between align-items-center py-3"
+          id="mainHeader"
+        >
+          <div class="d-flex align-items-center">
+            <a href="index.html">
+              <img
+                src="images/modena-logo.svg"
+                alt="Modena Apartments"
+                class="logo-img me-2"
+                id="logo"
+              />
+            </a>
+          </div>
+
+          <nav class="main-nav d-none d-lg-flex">
+            <a href="index.html" class="nav-link active">ABOUT THE PROJECT</a>
+            <a href="location.html" class="nav-link">LOCATION</a>
+            <a href="service.html" class="nav-link">SERVICES</a>
+            <a href="#" class="nav-link">FINANCING</a>
+            <a href="#" class="nav-link">OFFER</a>
+            <a href="#" class="nav-link">GALLERY</a>
+            <a href="contact.html" class="nav-link">CONTACT</a>
+            <button class="btn btn-cta">
+              <a href="#">I AM INTERESTED</a>
+            </button>
+          </nav>
+          <div class="mobile-menu d-flex align-items-center gap-4 d-lg-none">
+            <span class="offer-text">Offer</span>
+            <div
+              id="menuToggle"
+              style="cursor: pointer; transition: transform 0.3s ease"
+            >
+              <svg
+                class="hamburger-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                height="20"
+                width="20"
+                viewBox="0 0 448 512"
+              >
+                <path
+                  d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"
+                  fill="#a38219"
+                />
+              </svg>
+              <svg
+                class="close-icon d-none"
+                xmlns="http://www.w3.org/2000/svg"
+                height="20"
+                width="20"
+                viewBox="0 0 384 512"
+              >
+                <path
+                  d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+                  fill="#a38219"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div id="mobileMenuOverlay" class="mobile-overlay d-lg-none d-none">
+            <div class="mobile-nav d-flex flex-column align-items-end py-4">
+                <a href="#" class="nav-link p-2">ABOUT THE PROJECT</a>
+                <a href="#" class="nav-link p-2">LOCATION</a>
+                <a href="#" class="nav-link p-2">SERVICES</a>
+                <a href="#" class="nav-link p-2">FINANCING</a>
+                <a href="#" class="nav-link p-2">OFFER</a>
+                <a href="#" class="nav-link p-2">GALLERY</a>
+                <a href="#" class="nav-link p-2">CONTACT</a>
+            </div>
+            <div class="footer-contact">
+                <h3 class="footer-name mb-0">Jakub Martisek</h3>
+                <p class="footer-contact-title">
+                    <strong>Contact the seller</strong>
+                </p>
+                <p class="footer-phone">+421 914 345 313</p>
+                <p class="footer-email">donovaly@mwd.sk</p>
+            </div>
+        </div>
+    </div>
+    <div class="outer-container">
+        <div class="bgImg">
+            <h1 id="gallary-name">Loading Name..</h1>
+        </div>
+        <img cl src="https://www.modenaapartments.sk/wp-content/uploads/2022/10/divider-01.svg" alt=""
+            class="modemaImg">
+        <div class="divider">
+            <div class="divider-line"></div>
+
+
+            <h1 class="title" id="galleryTitle">Gallery Loading.. <span class="gallery"></span></h1>
+        </div>
+
+
+    </div>
+
+
+    <section class="carousel-sectionGallery">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper" id="carouselGallery">
+                <!-- Gallery items will be generated by JavaScript -->
+            </div>
+
+            <!-- Swiper navigation -->
+
+            <div class="swiper-pagination swiper-pagination-custom"></div>
+        </div>
+        <!-- <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div> -->
+    </section>
+
+    <footer class="modena-footer">
+        <div class="container">
+            <div class="row py-4">
+                <div class="col-md-3">
+                    <div class="footer-logo">
+                        <img src="images/modena-footer-logo.png" alt="" />
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-contact">
+                        <h3 class="footer-name">Jakub Martisek</h3>
+                        <p class="footer-contact-title">
+                            <strong>Contact the seller</strong>
+                        </p>
+                        <p class="footer-phone">+421 914 345 313</p>
+                        <p class="footer-email">donovaly@mwd.sk</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+            <div class="footer-links">
+              <div class="links-column">
+                <a href="index.html" class="footer-link">About the project</a>
+                <a href="location.html" class="footer-link">Location</a>
+                <a href="service.html" class="footer-link">Services</a>
+                <a href="#" class="footer-link">Offer</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="footer-links">
+              <div class="links-column">
+                <a href="gallary.html" class="footer-link">Gallery</a>
+                <a href="contact.html" class="footer-link">Contacts</a>
+                <a href="#" class="footer-link">Personal data protection</a>
+                <a href="#" class="footer-link">Cookie settings</a>
+              </div>
+            </div>
+          </div>
+            </div>
+            <div class="footer-border"></div>
+            <div class="footer-copyright">
+                <div class="footer-copyright-text">
+                    <p>
+                        © 2025 <strong class="main-site-name">MODENA</strong>
+                        <strong class="site-name">APARTMENTS DONOVALY</strong>
+                    </p>
+                </div>
+                <div class="social-icons">
+                    <a href="#" class="icon-bg">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 448 512">
+                            <path
+                                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                                fill="white" />
+                        </svg>
+                    </a>
+                    <a href="#" class="icon-bg">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 320 512">
+                            <path
+                                d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"
+                                fill="white" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<div id="galleryModal" class="modal-overlay d-none">
+        <div class="modal-content">
+            <button id="closeModal" class="close-btn">&times;</button>
+            <div class="gallery-row">
+                <div class="gallery-label">Gallery</div>
+                <a href="gallary.html" class="gallery-link" data-index="0">CONSTRUCTION</a>
+            </div>
+
+            <div class="gallery-row">
+                <div class="gallery-label">Gallery</div>
+                <a href="gallary.html" class="gallery-link" data-index="1">LARGE APARTMENT</a>
+                <span class="size-indicator">| L |</span>
+            </div>
+
+            <div class="gallery-row">
+                <div class="gallery-label">Gallery</div>
+                <a href="gallary.html" class="gallery-link" data-index="2">MEDIUM APARTMENT</a>
+                <span class="size-indicator">| M |</span>
+            </div>
+
+            <div class="gallery-row">
+                <div class="gallery-label">Gallery</div>
+                <a href="gallary.html" class="gallery-link" data-index="3">SMALL APARTMENT</a>
+                <span class="size-indicator">| S |</span>
+            </div>
+
+            <div class="gallery-row">
+                <div class="gallery-label">Gallery</div>
+                <a href="gallary.html" class="gallery-link" data-index="4">CHILDREN'S CORNER</a>
+            </div>
+
+            <div class="gallery-row">
+                <div class="gallery-label">Gallery</div>
+                <a href="gallary.html" class="gallery-link" data-index="5">LOBBY</a>
+            </div>
+
+            <div class="gallery-row">
+                <div class="gallery-label">Gallery</div>
+                <a href="gallary.html" class="gallery-link" data-index="6">RESTAURANT</a>
+            </div>
+
+            <div class="gallery-row">
+                <a href="gallary.html" class="standalone-label" data-index="7">SPA</a>
+                <div class="gallery-label">Gallery</div>
+            </div>
+
+            <div class="gallery-row">
+                <div class="gallery-label">Gallery</div>
+                <a href="gallary.html" class="gallery-link" data-index="8">WELLNESS</a>
+            </div>
+
+            <div class="gallery-row">
+                <a href="video.html" class="standalone-label" data-index="9">VIDEO</a>
+                <div class="gallery-label">Gallery</div>
+            </div>
+            <!-- You can add your gallery images or carousel here -->
+        </div>
+    </div>
+    <script>
+
+
+ 
+        // Data structure for all galleries
+        const galleries = [
+            {
+                gallaryName: "Gallery Construction",
+                name: "Construction",
+                images: [
+                    "https://www.modenaapartments.sk/wp-content/uploads/2024/11/RW-314-PS.jpg",
+                    "https://www.modenaapartments.sk/wp-content/uploads/2024/11/RW-315-PS.jpg",
+                    "https://www.modenaapartments.sk/wp-content/uploads/2024/11/RW-319-PS.jpg",
+                    "https://www.modenaapartments.sk/wp-content/uploads/2024/11/RW-317-PS.jpg",
+                    "https://www.modenaapartments.sk/wp-content/uploads/2024/11/RW-312-PS.jpg",
+                    "https://www.modenaapartments.sk/wp-content/uploads/2024/11/RW-310-PS.jpg",
+                    "https://www.modenaapartments.sk/wp-content/uploads/2024/11/RW-312-PS.jpg",
+                    "https://www.modenaapartments.sk/wp-content/uploads/2024/11/vlcsnap-2024-06-13-10h15m22s871-PS.jpg"
+                ]
+            },
+            {
+                gallaryName: "Gallery large apartment L",
+                name: "Large apartment L",
+                images: [
+                    "https://www.modenaapartments.sk/wp-content/uploads/2023/10/apartman-l-modena-apartments-donovaly-04.webp",
+                    "https://www.modenaapartments.sk/wp-content/uploads/2023/10/apartman-l-modena-apartments-donovaly-05.webp",
+                    "https://www.modenaapartments.sk/wp-content/uploads/2023/10/apartman-l-modena-apartments-donovaly-03.webp",
+                    "https://www.modenaapartments.sk/wp-content/uploads/2023/10/apartman-l-modena-apartments-donovaly-02.webp",
+                    "https://www.modenaapartments.sk/wp-content/uploads/2023/10/apartman-l-modena-apartments-donovaly-01.webp",
+                    "https://www.modenaapartments.sk/wp-content/uploads/2023/10/apartman-l-modena-apartments-donovaly-10.webp"
+                ]
+            },
+            {
+                gallaryName: "Gallery medium Apartment M",
+                name: "Medium Apartment M",
+                images: [
+
+                    "https://www.modenaapartments.sk/wp-content/uploads/2023/10/apartman-m-modena-apartments-donovaly-10.webp",
+                    "https://www.modenaapartments.sk/wp-content/uploads/2023/10/apartman-m-modena-apartments-donovaly-11.webp",
+                    "https://www.modenaapartments.sk/wp-content/uploads/2023/10/apartman-m-modena-apartments-donovaly-09.webp",
+                    "https://www.modenaapartments.sk/wp-content/uploads/2023/10/apartman-m-modena-apartments-donovaly-08.webp",
+                    "https://www.modenaapartments.sk/wp-content/uploads/2023/10/apartman-m-modena-apartments-donovaly-07.webp",
+                    "https://www.modenaapartments.sk/wp-content/uploads/2023/10/apartman-m-modena-apartments-donovaly-06.webp",
+                    "https://www.modenaapartments.sk/wp-content/uploads/2023/10/apartman-m-modena-apartments-donovaly-05.webp",
+                    "https://www.modenaapartments.sk/wp-content/uploads/2023/10/apartman-m-modena-apartments-donovaly-04.webp",
+                    "https://www.modenaapartments.sk/wp-content/uploads/2023/10/apartman-m-modena-apartments-donovaly-03.webp",
+                    "https://www.modenaapartments.sk/wp-content/uploads/2023/10/apartman-m-modena-apartments-donovaly-02.webp",
+                    "https://www.modenaapartments.sk/wp-content/uploads/2023/10/apartman-m-modena-apartments-donovaly-01.webp",
+
+                ]
+            },
+            {
+                gallaryName: "Gallery small apartment S",
+                name: "Small Apartment S",
+                images: [
+                    "https://www.modenaapartments.sk/wp-content/uploads/2024/08/Donovaly-AS1_Scene-12.effectsResult-%E2%80%93-kopia.png",
+                    "https://www.modenaapartments.sk/wp-content/uploads/2023/10/apartman-s-modena-apartments-donovaly-08.webp",
+                    "https://www.modenaapartments.sk/wp-content/uploads/2023/10/apartman-s-modena-apartments-donovaly-07.webp",
+                    "https://www.modenaapartments.sk/wp-content/uploads/2023/10/apartman-s-modena-apartments-donovaly-06.webp",
+                    "https://www.modenaapartments.sk/wp-content/uploads/2023/10/apartman-s-modena-apartments-donovaly-05.webp",
+                    "https://www.modenaapartments.sk/wp-content/uploads/2023/10/apartman-s-modena-apartments-donovaly-04.webp",
+                    "https://www.modenaapartments.sk/wp-content/uploads/2023/10/apartman-s-modena-apartments-donovaly-03.webp",
+                    "https://www.modenaapartments.sk/wp-content/uploads/2023/10/apartman-s-modena-apartments-donovaly-02.webp",
+                    "https://www.modenaapartments.sk/wp-content/uploads/2023/10/apartman-s-modena-apartments-donovaly-01.webp",
+                ]
+            },
+            {
+                gallaryName: "Gallery children's corner",
+                name: "Children's corner",
+                images: [
+                    "https://www.modenaapartments.sk/wp-content/uploads/2023/10/detsky-kutik-modena-apartments-donovaly-01.webp",
+                    "https://www.modenaapartments.sk/wp-content/uploads/2023/10/detsky-kutik-modena-apartments-donovaly-02.webp",
+                    "https://www.modenaapartments.sk/wp-content/uploads/2023/10/detsky-kutik-modena-apartments-donovaly-03.webp",
+                    "https://www.modenaapartments.sk/wp-content/uploads/2023/10/detsky-kutik-modena-apartments-donovaly-04.webp",
+                    "https://www.modenaapartments.sk/wp-content/uploads/2023/10/detsky-kutik-modena-apartments-donovaly-05.webp",
+                    "https://www.modenaapartments.sk/wp-content/uploads/2023/10/detsky-kutik-modena-apartments-donovaly-06.webp",
+                ]
+            },
+            {
+                gallaryName: "Gallery lobby",
+
+                name: "Lobby",
+                images: [
+                    "https://www.modenaapartments.sk/wp-content/uploads/2023/10/lobby-modena-apartments-donovaly-01.webp",
+                    "https://www.modenaapartments.sk/wp-content/uploads/2023/10/lobby-modena-apartments-donovaly-02.webp",
+                    "https://www.modenaapartments.sk/wp-content/uploads/2023/10/lobby-modena-apartments-donovaly-03.webp",
+                    "https://www.modenaapartments.sk/wp-content/uploads/2023/10/lobby-modena-apartments-donovaly-04.webp",
+                    "https://www.modenaapartments.sk/wp-content/uploads/2023/10/lobby-modena-apartments-donovaly-05.webp",
+                    "https://www.modenaapartments.sk/wp-content/uploads/2023/10/lobby-modena-apartments-donovaly-06.webp",
+
+                ]
+            },
+            {
+                gallaryName: "Restaurant gallery",
+                name: "Restaurant",
+                images: [
+                    "https://www.modenaapartments.sk/wp-content/uploads/2024/08/ReC5A1taurC3A1cia20prC3ADzemie20finC3A1l202_Scene2011.effectsResult-enhanced-2.png",
+                    "https://www.modenaapartments.sk/wp-content/uploads/2023/10/restauracia-modena-apartments-donovaly-11.webp",
+                    "https://www.modenaapartments.sk/wp-content/uploads/2023/10/restauracia-modena-apartments-donovaly-12.webp",
+                    "https://www.modenaapartments.sk/wp-content/uploads/2023/10/restauracia-modena-apartments-donovaly-14.webp",
+                    "https://www.modenaapartments.sk/wp-content/uploads/2023/10/restauracia-modena-apartments-donovaly-15.webp",
+                    "https://www.modenaapartments.sk/wp-content/uploads/2023/10/restauracia-modena-apartments-donovaly-16.webp",
+                    "https://www.modenaapartments.sk/wp-content/uploads/2023/10/restauracia-modena-apartments-donovaly-09.webp",
+                    "https://www.modenaapartments.sk/wp-content/uploads/2023/10/restauracia-modena-apartments-donovaly-10.webp",
+                ]
+            },
+            {
+                gallaryName: "SPA Gallery",
+                name: "SPA",
+
+                images: [
+                    "https://www.modenaapartments.sk/wp-content/uploads/2023/10/spa-modena-apartments-donovaly-01.webp",
+                    "https://www.modenaapartments.sk/wp-content/uploads/2023/10/spa-modena-apartments-donovaly-02.webp",
+                    "https://www.modenaapartments.sk/wp-content/uploads/2023/10/spa-modena-apartments-donovaly-03.webp",
+                    "https://www.modenaapartments.sk/wp-content/uploads/2023/10/spa-modena-apartments-donovaly-04.webp",
+                    "https://www.modenaapartments.sk/wp-content/uploads/2023/10/spa-modena-apartments-donovaly-05.webp",
+                    "https://www.modenaapartments.sk/wp-content/uploads/2023/10/spa-modena-apartments-donovaly-06.webp",
+                    "https://www.modenaapartments.sk/wp-content/uploads/2023/10/spa-modena-apartments-donovaly-07.webp",
+                    "https://www.modenaapartments.sk/wp-content/uploads/2023/10/spa-modena-apartments-donovaly-08.webp",
+                ]
+            },
+            {
+                gallaryName: "Wellness Gallery",
+                name: "Wellness",
+                images: [
+                    "https://www.modenaapartments.sk/wp-content/uploads/2023/10/welness-modena-apartments-donovaly-01.webp",
+                    "https://www.modenaapartments.sk/wp-content/uploads/2023/10/welness-modena-apartments-donovaly-02.webp",
+                    "https://www.modenaapartments.sk/wp-content/uploads/2023/10/welness-modena-apartments-donovaly-03.webp",
+                    "https://www.modenaapartments.sk/wp-content/uploads/2023/10/welness-modena-apartments-donovaly-04.webp",
+                    "https://www.modenaapartments.sk/wp-content/uploads/2023/10/welness-modena-apartments-donovaly-05.webp",
+                    "https://www.modenaapartments.sk/wp-content/uploads/2023/10/welness-modena-apartments-donovaly-06.webp",
+                    "https://www.modenaapartments.sk/wp-content/uploads/2023/10/welness-modena-apartments-donovaly-07.webp",
+                    "https://www.modenaapartments.sk/wp-content/uploads/2023/10/welness-modena-apartments-donovaly-08.webp",
+
+                ]
+            },
+            {
+                gallaryName: "VIDEO Gallery",
+                name: "Video",
+                images: [
+                    "/api/placeholder/400/320",
+                    "/api/placeholder/400/320",
+                    "/api/placeholder/400/320",
+                    "/api/placeholder/400/320",
+                    "/api/placeholder/400/320",
+                    "/api/placeholder/400/320"
+                ]
+            }
+        ];
+
+        // Function to create tab elements
+        // Function to create tab elements
+        function createTabs(defaultIndex = 2) {
+            // const tabsContainer = document.getElementById('galleryTabs');
+
+            galleries.forEach((gallery, index) => {
+                const tab = document.createElement('div');
+                tab.className = 'tab';
+                if (index === defaultIndex) tab.classList.add('active');
+                tab.textContent = gallery.name;
+                tab.dataset.index = index;
+
+                tab.addEventListener('click', () => {
+                    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+                    tab.classList.add('active');
+                    updateGallery(index);
+                    updateTitle(gallery.gallaryName);
+                    updateName(gallery.name);
+                });
+
+                // tabsContainer.appendChild(tab);
+            });
+        }
+
+
+
+        // Function to update gallery images
+        let swiperInstance = null;
+
+        function updateGallery(galleryIndex) {
+            const carouselElement = $('#carouselGallery');
+            const gallery = galleries[galleryIndex];
+
+            // Destroy existing Swiper instance if exists
+            if (swiperInstance) {
+                swiperInstance.destroy(true, true);
+                swiperInstance = null;
+            }
+
+            // Clear existing content
+            carouselElement.empty();
+
+            // Add images
+            gallery.images.forEach((imgSrc, index) => {
+                const slide = $(`
+            <div class="swiper-slide">
+                <div class="item">
+                    <img src="${imgSrc}" alt="Gallery image ${index + 1}" />
+                </div>
+            </div>
+        `);
+                carouselElement.append(slide);
+            });
+
+            // Initialize Swiper
+            swiperInstance = new Swiper('.mySwiper', {
+                loop: true,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                slidesPerView: 3,
+                spaceBetween: 10,
+                breakpoints: {
+                    320: {
+                        slidesPerView: 1,
+                        spaceBetween: 10,
+                    },
+                    576: {
+                        slidesPerView: 2,
+                        spaceBetween: 15,
+                    },
+                    992: {
+                        slidesPerView: 3,
+                        spaceBetween: 20,
+                    }
+                }
+            });
+        }
+
+
+        // Function to update the title
+        function updateTitle(title) {
+            const titleElement = document.getElementById('galleryTitle');
+
+            const words = title?.split(' ');
+            const firstWord = words[0];
+            const remaining = words.slice(1).join(' ');
+
+            titleElement.innerHTML = `
+        <span style="
+            font-weight: bold;
+            border-bottom: 2px solid #a38219;
+            display: inline-block;
+            padding: 0 8px;
+            margin-right: 2px;
+        ">
+            ${firstWord}
+        </span>${remaining ? ' ' + remaining : ''}
+    `;
+        }
+
+
+
+        function updateName(name) {
+            const titleElement = document.getElementById('gallary-name');
+            // Extract the first word (usually "Lobby", "Restaurant", etc.)
+            const firstWord = name;
+            titleElement.innerHTML = `${firstWord}`;
+        }
+
+
+        // Initialize the page
+        $(document).ready(function () {
+
+            const defaultGalleryIndex = localStorage.getItem("index") || 1;// Change this index to show different gallery on load
+            createTabs(defaultGalleryIndex);
+            updateGallery(defaultGalleryIndex);
+            updateTitle(galleries[defaultGalleryIndex].gallaryName);
+            updateName(galleries[defaultGalleryIndex].name);
+        });
+
+
+
+
+        // Get references
+  const galleryBtn = document.querySelector('.main-nav .nav-link:nth-child(6)'); // 6th link is GALLERY
+  const modal = document.getElementById('galleryModal');
+  const closeModalBtn = document.getElementById('closeModal');
+
+  // Show modal on gallery button click
+  galleryBtn.addEventListener('click', function(event) {
+    event.preventDefault(); // prevent default link navigation
+    modal.classList.remove('d-none');
+  });
+
+  // Close modal on clicking close button
+  closeModalBtn.addEventListener('click', () => {
+    modal.classList.add('d-none');
+  });
+
+  // Optional: Close modal on clicking outside modal content
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      modal.classList.add('d-none');
+    }
+  });
+
+  // Optional: Close modal on pressing ESC key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === "Escape" && !modal.classList.contains('d-none')) {
+      modal.classList.add('d-none');
+    }
+  })
+
+
+   document.addEventListener("DOMContentLoaded", function () {
+    const allLinks = document.querySelectorAll('.gallery-link, .standalone-label');
+
+    allLinks.forEach(link => {
+      link.addEventListener('click', function (e) {
+        const index = this.getAttribute('data-index');
+        if (index) {
+          localStorage.setItem('index', index);
+        }
+      });
+    });
+  });
+
+
+   window.addEventListener("scroll", function () {
+    const header = document.getElementById("mainHeader");
+    const logo = document.getElementById("logo");
+
+    if (window.scrollY > 50) {
+      header.classList.add("header-shrink");
+      logo.classList.add("logo-shrink");
+    } else {
+      header.classList.remove("header-shrink");
+      logo.classList.remove("logo-shrink");
+    }
+  });
+        
+    </script>
+</body>
+
+</html>

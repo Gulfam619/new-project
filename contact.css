@@ -1,0 +1,103 @@
+/* Contact Page */
+.contact-header h1 {
+  font-weight: 700;
+  font-size: 2.88rem;
+  line-height: 3.5rem;
+  text-align: center;
+}
+.contact-header p {
+  width: 70%;
+  margin: auto;
+  font-size: 16px;
+}
+.gold-line {
+  position: relative;
+  display: inline-block;
+  color: #002838;
+}
+.gold-line::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #a38219;
+}
+.contact-form-bg {
+  background-size: initial;
+  background-repeat: repeat;
+  background-image: linear-gradient(
+      90deg,
+      rgba(12, 113, 195, 0) 50%,
+      #ffffff 50%
+    ),
+    url(images/repeat-bg.webp) !important;
+  min-height: 100vh;
+}
+.custom-form {
+  background-color: #fff;
+  border: 1px solid #eee;
+  max-width: 560px;
+  margin: auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+.border-bottom-only {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.border-bottom-only:focus {
+  outline: none;
+  box-shadow: none;
+  border-bottom: 1px solid #ccc;
+}
+.form-check-label a {
+  color: #707070;
+}
+.right-contact-content {
+  max-width: 560px;
+  margin: auto;
+}
+.right-contact-content h1 {
+  font-weight: 900;
+}
+.seller-details .footer-name {
+  font-size: 22px;
+}
+.seller-details .footer-contact-title {
+  font-size: 14px;
+  color: black;
+  font-weight: 600;
+}
+.seller-details .footer-phone,
+.footer-email {
+  font-size: 14px;
+  color: #707070;
+  line-height: 25px;
+  margin: 0;
+}
+@media (max-width: 991px) {
+  .contact-header {
+    padding: 0 10px;
+  }
+  .contact-header h1 {
+    text-align: start;
+  }
+  .contact-header p {
+    width: 100%;
+  }
+  .contact-form-bg {
+    background-image: linear-gradient(
+        90deg,
+        rgba(12, 113, 195, 0) 50%,
+        #ffffff 100%
+      ),
+      url(images/repeat-bg.webp) !important;
+  }
+  .seller-details .footer-contact{
+    text-align: start;
+  }
+}
