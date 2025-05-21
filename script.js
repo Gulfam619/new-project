@@ -93,12 +93,17 @@ jQuery("#carousel").owlCarousel({
 
 
  // Get references
-  const galleryBtn = document.querySelector('.main-nav .nav-link:nth-child(6)'); // 6th link is GALLERY
+  const galleryBtn = document.querySelector('.main-nav .nav-link:nth-child(6)' ); // 6th link is GALLERY
+  const gallerymobileBtn = document.querySelector('.mobile-nav .nav-link:nth-child(6) '); // 6th link is GALLERY
   const modal = document.getElementById('galleryModal');
   const closeModalBtn = document.getElementById('closeModal');
 
   // Show modal on gallery button click
   galleryBtn.addEventListener('click', function(event) {
+    event.preventDefault(); // prevent default link navigation
+    modal.classList.remove('d-none');
+  });
+  gallerymobileBtn.addEventListener('click', function(event) {
     event.preventDefault(); // prevent default link navigation
     modal.classList.remove('d-none');
   });
