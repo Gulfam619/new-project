@@ -489,6 +489,10 @@ body {
     margin-top: 30px;
     width: 100%;
   }
+   .header-bar
+  {
+    padding: 0px 20px;
+  }
 }
 @media (max-width: 768px) {
   .top-bar {
@@ -593,10 +597,7 @@ body {
   .mobile-menu {
     display: flex;
   }
-  .header-bar
-  {
-    padding: 0px 20px;
-  }
+ 
 }
 
 
