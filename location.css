@@ -79,12 +79,13 @@ body {
   background-color: rgba(255, 255, 255, 0.8);
   color: #0a2942;
   padding-top: 30px;
-  max-width: 530px;
+  max-width: 500px;
+ 
 }
 
 /* Heading styles */
 h1 {
-  font-size: 40px;
+  font-size: 46px;
   line-height: 1.2;
 }
 
@@ -173,7 +174,7 @@ p strong {
 }
 
 .highlight-tracking-text {
-  padding: 10px;
+  padding-right: 15px;
   margin-top: 50px;
   color: #565656;
   font-weight: normal;
@@ -189,9 +190,9 @@ p strong {
 .tracking-image-bottom {
   position: relative;
   z-index: 2;
-  left: 85px;
-  bottom: 200px;
-  padding-left: 112px;
+  left: 35px;
+  bottom: 170px;
+  /* padding-left: 112px; */
   transform: translate(10px, 20px);
   transition: all 0.8s ease-out;
 }
@@ -257,8 +258,8 @@ p strong {
 .wellness-image-bottom {
   position: relative;
   z-index: 2;
-  bottom: 130px;
-  left: 24px;
+  bottom: 90px;
+  left: 14px;
   padding-left: 30px;
   transform: translate(10px, 20px);
   transition: all 0.8s ease-out;
@@ -284,7 +285,7 @@ p strong {
 .party-image-bottom {
   position: relative;
   z-index: 2;
-  bottom: 190px;
+  bottom: 180px;
   transform: translate(-10px, 20px);
   transition: all 0.8s ease-out;
 }
@@ -334,7 +335,7 @@ p strong {
 .subheadline {
   color: #003344;
   font-size: 48px;
-  font-weight: normal;
+  font-weight: 200;
   line-height: 1.1;
   margin-bottom: 40px;
   width: fit-content;
@@ -378,6 +379,38 @@ p strong {
   height: auto !important;
 }
 
+/* Large screens (lg) - 1200px and up */
+@media (max-width: 1199px) {
+  h1 {
+    font-size: 42px;
+  }
+  
+  .winter-title,
+  .tracking-bold {
+    font-size: 2.3rem;
+  }
+  
+  .highlight-text {
+    font-size: 1.3rem;
+  }
+  
+  .descriptive-text,
+  .map-Para,
+  .highlight-tracking-text {
+    font-size: 15px;
+  }
+  
+  .headline,
+  .subheadline {
+    font-size: 44px;
+  }
+  
+  .number,
+  .description {
+    font-size: 17px;
+  }
+}
+
 /* Medium screens (md) - Usually 768px to 991px */
 @media (max-width: 991px) {
   .location-container {
@@ -401,21 +434,31 @@ p strong {
   .text-content {
     padding: 10px !important;
   }
-  .text-content h1 {
-    font-size: 2.3rem !important;
+  
+  .paradise-title,h1 {
+    font-size: 38px !important;
     line-height: 2.7rem;
   }
-  .winter-title {
-    font-size: 36px !important;
+  
+  .winter-title,
+  .tracking-bold {
+    font-size: 2.1rem !important;
   }
+  
   .winter-heading {
     margin-top: 30px;
-    font-size: 36px !important;
+    font-size: 40px !important;
     line-height: 3rem !important;
   }
 
   .highlight-text {
-    font-size: 1.2rem !important;
+    font-size: 1.15rem !important;
+  }
+  
+  .descriptive-text,
+  .map-Para,
+  .highlight-tracking-text {
+    font-size: 14px !important;
   }
 
   .winter-image-bottom {
@@ -461,6 +504,11 @@ p strong {
   .subheadline {
     font-size: 36px !important;
   }
+  
+  .number,
+  .description {
+    font-size: 16px !important;
+  }
 
   /* Image size control */
   .winter-image-top img,
@@ -496,13 +544,24 @@ p strong {
     padding-top: 20px !important;
   }
 
+  .paradise-title,h1 {
+    font-size: 32px !important;
+  }
+  
+  .winter-title,
+  .tracking-bold {
+    font-size: 1.9rem !important;
+  }
+
   .highlight-text {
-    font-size: 1.3rem;
+    font-size: 1.1rem !important;
     padding-bottom: 20px;
   }
 
-  .descriptive-text {
-    font-size: 16px;
+  .descriptive-text,
+  .map-Para,
+  .highlight-tracking-text {
+    font-size: 14px !important;
   }
 
   .last-container {
@@ -517,10 +576,15 @@ p strong {
 
   .headline,
   .subheadline {
-    font-size: 30px !important;
+    font-size: 28px !important;
     text-align: center !important;
     margin-left: auto !important;
     margin-right: auto !important;
+  }
+  
+  .number,
+  .description {
+    font-size: 15px !important;
   }
 
   .see-menu-button {
@@ -570,8 +634,23 @@ p strong {
     height: auto !important;
   }
 
+  .paradise-title,h1 {
+    font-size: 28px !important;
+  }
+  
+  .winter-title,
+  .tracking-bold {
+    font-size: 1.7rem !important;
+  }
+
   .highlight-text {
-    font-size: 1.3rem;
+    font-size: 1.0rem !important;
+  }
+  
+  .descriptive-text,
+  .map-Para,
+  .highlight-tracking-text {
+    font-size: 13px !important;
   }
 
   .icon {
@@ -581,7 +660,7 @@ p strong {
 
   .number,
   .description {
-    font-size: 16px !important;
+    font-size: 14px !important;
   }
 
   .headline,
@@ -591,6 +670,7 @@ p strong {
 
   .see-menu-button {
     padding: 12px 25px !important;
+    font-size: 14px !important;
   }
 
   .playground-image {
@@ -621,13 +701,34 @@ p strong {
   .mountain-image {
     bottom: 20px !important;
   }
+
+  .paradise-title,h1 {
+    font-size: 24px !important;
+  }
+  
+  .winter-title,
+  .tracking-bold {
+    font-size: 1.5rem !important;
+  }
+  
   .highlight-text {
-    font-size: 1.3rem;
+    font-size: 0.9rem !important;
+  }
+  
+  .descriptive-text,
+  .map-Para,
+  .highlight-tracking-text {
+    font-size: 12px !important;
   }
 
   .icon {
     width: 80px !important;
     height: 80px !important;
+  }
+
+  .number,
+  .description {
+    font-size: 13px !important;
   }
 
   .headline,
@@ -637,7 +738,7 @@ p strong {
 
   .see-menu-button {
     padding: 10px 20px !important;
-    font-size: 14px !important;
+    font-size: 13px !important;
   }
 
   /* Image size control - most restrictive */
@@ -655,5 +756,43 @@ p strong {
     max-width: 70% !important;
     height: auto !important;
     max-height: 200px !important; /* Further restrict height */
+  }
+}
+
+/* Ultra small screens - 320px and below */
+@media (max-width: 320px) {
+  
+  .paradise-title,h1 {
+    font-size: 22px !important;
+  }
+  
+  .winter-title,
+  .tracking-bold {
+    font-size: 1.3rem !important;
+  }
+  
+  .highlight-text {
+    font-size: 0.85rem !important;
+  }
+  
+  .descriptive-text,
+  .map-Para,
+  .highlight-tracking-text {
+    font-size: 11px !important;
+  }
+
+  .headline,
+  .subheadline {
+    font-size: 20px !important;
+  }
+  
+  .number,
+  .description {
+    font-size: 12px !important;
+  }
+
+  .see-menu-button {
+    padding: 8px 16px !important;
+    font-size: 12px !important;
   }
 }
