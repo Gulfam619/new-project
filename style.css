@@ -626,6 +626,8 @@ body {
   max-width: 500px;
   width: 90%;
   position: relative;
+  height: 90vh;
+  padding: 60px !important;
 }
 
 
@@ -641,7 +643,7 @@ body {
 }
 
 .popup {
-             height: 95vh;
+             height: 98vh;
             position: relative;
             width: 40vw;
             max-width: 700px;
