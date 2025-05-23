@@ -242,9 +242,9 @@ p strong {
 
 .description {
   font-size: 18px;
-  color: #cea92d;
+  color: #CEA92D;
   text-align: center;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 /* Third Section  */
@@ -342,12 +342,12 @@ p strong {
 }
 
 .description {
-  color: #707070;
+  color: #CEA92D;
   font-size: 16px;
   line-height: 1.6;
   margin-bottom: 30px;
   text-align: start;
-  font-weight: normal;
+  font-weight: bold;
 }
 
 .highlight {
@@ -458,7 +458,7 @@ p strong {
   .descriptive-text,
   .map-Para,
   .highlight-tracking-text {
-    font-size: 14px !important;
+    font-size: 16px !important;
   }
 
   .winter-image-bottom {
@@ -559,9 +559,14 @@ p strong {
   }
 
   .descriptive-text,
-  .map-Para,
   .highlight-tracking-text {
-    font-size: 14px !important;
+    font-size: 16px !important;
+  }
+  .map-Para
+  {
+    font-size: 16px !important;
+    line-height: 1.7 !important;
+
   }
 
   .last-container {
@@ -621,6 +626,10 @@ p strong {
 
 /* Extra Small screens - 320px to 575px */
 @media (max-width: 575px) {
+  .map-Para
+  {
+    font-size: 16px !important;
+  }
   .location-container {
     height: auto !important;
   }
@@ -648,7 +657,6 @@ p strong {
   }
   
   .descriptive-text,
-  .map-Para,
   .highlight-tracking-text {
     font-size: 13px !important;
   }
@@ -716,9 +724,13 @@ p strong {
   }
   
   .descriptive-text,
-  .map-Para,
   .highlight-tracking-text {
     font-size: 12px !important;
+  }
+
+  .map-Para
+  {
+    font-size: 16px !important;
   }
 
   .icon {
@@ -776,7 +788,6 @@ p strong {
   }
   
   .descriptive-text,
-  .map-Para,
   .highlight-tracking-text {
     font-size: 11px !important;
   }

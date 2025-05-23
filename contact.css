@@ -1,4 +1,14 @@
 /* Contact Page */
+
+.parentDiv
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+
 .contact-header h1 {
   font-weight: 700;
   font-size: 2.88rem;
@@ -33,7 +43,7 @@
       #ffffff 50%
     ),
     url(images/repeat-bg.webp) !important;
-  min-height: 100vh;
+  min-height: fit-content;
 }
 .custom-form {
   background-color: #fff;
@@ -78,6 +88,15 @@
   color: #707070;
   line-height: 25px;
   margin: 0;
+}
+
+@media (min-width: 1400px) {
+  .contact-header
+{
+  padding-top: 60px;
+}
+
+
 }
 @media (max-width: 991px) {
   .contact-header {
